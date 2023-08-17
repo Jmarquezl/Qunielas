@@ -16,6 +16,7 @@ namespace Authorization.Repository
 
         public bool Logine(string user, string password)
         {
+            logger.LogInformation("Inicio de la consulta de usuario.");
             try
             {
                 return customClient.DataBase.GetCollection<User>(USUARIO).Find(u => u.Usuario.Equals(user) && u.Password.Equals(password)).Any();

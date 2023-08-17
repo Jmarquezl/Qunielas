@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "DSymUZlCIiKXXC39LtCKbOUiP+EoWM+PSJ8QemYQ5WRF53mBFBodqIuzoqVGeFqFed2zcyPDq1i5ODuxlP9vaA==",
+  "dgSpecHash": "I8D023EZmw3O4IHgg05idUQ5CinB9ur0vhscwRpaEMemgwq7awHlJZhhy44f+hR6XWokvAmM41Wu01cA2fj0Ww==",
   "success": true,
-  "projectFilePath": "C:\\Users\\inevi\\OneDrive\\Documentos\\Workspace\\Middleware\\Authorization\\Authorization.csproj",
+  "projectFilePath": "C:\\WorkSpace\\Middleware\\Authorization\\Authorization.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\inevi\\.nuget\\packages\\dnsclient\\1.4.0\\dnsclient.1.4.0.nupkg.sha512",
     "C:\\Users\\inevi\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",

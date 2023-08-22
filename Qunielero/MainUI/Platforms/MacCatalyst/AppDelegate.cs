@@ -1,6 +1,6 @@
 ﻿using Foundation;
 
-namespace MainUI
+namespace Quinieleros
 {
     [Register("AppDelegate")]
     public class AppDelegate : MauiUIApplicationDelegate

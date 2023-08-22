@@ -1,7 +1,7 @@
 ﻿using ObjCRuntime;
 using UIKit;
 
-namespace MainUI
+namespace Quinieleros
 {
     public class Program
     {

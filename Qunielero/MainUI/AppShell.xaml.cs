@@ -1,4 +1,4 @@
-﻿namespace MainUI
+﻿namespace Quinieleros
 {
     public partial class AppShell : Shell
     {

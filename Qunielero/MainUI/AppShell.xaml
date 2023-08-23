@@ -4,11 +4,16 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:Quinieleros"
+    xmlns:views="clr-namespace:Quinieleros.Views"
     Shell.FlyoutBehavior="Disabled">
 
-    <ShellContent
+    <!--<ShellContent
         Title="Bienvenido"
         ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
-
+        Route="MainPage" />-->
+    <ShellContent
+        Title="Quinieleros"
+        ContentTemplate="{DataTemplate views:Login}"
+        Route="/Views/MainPage" />
+    
 </Shell>

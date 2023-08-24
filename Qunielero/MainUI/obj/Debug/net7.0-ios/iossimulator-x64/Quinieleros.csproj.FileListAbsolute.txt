@@ -217,7 +217,6 @@ C:\WorkSpace\Qunielero\MainUI\bin\Debug\net7.0-ios\iossimulator-x64\libxamarin-d
 C:\WorkSpace\Qunielero\MainUI\bin\Debug\net7.0-ios\iossimulator-x64\libxamarin-dotnet-debug.dylib
 C:\WorkSpace\Qunielero\MainUI\bin\Debug\net7.0-ios\iossimulator-x64\libxamarin-dotnet.a
 C:\WorkSpace\Qunielero\MainUI\bin\Debug\net7.0-ios\iossimulator-x64\libxamarin-dotnet.dylib
-C:\WorkSpace\Qunielero\MainUI\obj\Debug\net7.0-ios\iossimulator-x64\build-signature\signature
 C:\WorkSpace\Qunielero\MainUI\obj\Debug\net7.0-ios\iossimulator-x64\mauiimage.inputs
 C:\WorkSpace\Qunielero\MainUI\obj\Debug\net7.0-ios\iossimulator-x64\mauifont.inputs
 C:\WorkSpace\Qunielero\MainUI\obj\Debug\net7.0-ios\iossimulator-x64\mauisplash.inputs
@@ -268,3 +267,4 @@ C:\WorkSpace\Qunielero\MainUI\obj\Debug\net7.0-ios\iossimulator-x64\refint\Quini
 C:\WorkSpace\Qunielero\MainUI\obj\Debug\net7.0-ios\iossimulator-x64\Quinieleros.pdb
 C:\WorkSpace\Qunielero\MainUI\obj\Debug\net7.0-ios\iossimulator-x64\Quinieleros.genruntimeconfig.cache
 C:\WorkSpace\Qunielero\MainUI\obj\Debug\net7.0-ios\iossimulator-x64\ref\Quinieleros.dll
+C:\WorkSpace\Qunielero\MainUI\bin\Debug\net7.0-ios\iossimulator-x64\CommunityToolkit.Mvvm.dll

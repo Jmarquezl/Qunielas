@@ -1053,3 +1053,5 @@ C:\WorkSpace\Qunielero\MainUI\obj\Debug\net7.0-android\stamp\_ConvertResourcesCa
 C:\WorkSpace\Qunielero\MainUI\obj\Debug\net7.0-android\stamp\_GenerateJavaStubs.stamp
 C:\WorkSpace\Qunielero\MainUI\obj\Debug\net7.0-android\stamp\_GeneratePackageManagerJava.stamp
 C:\WorkSpace\Qunielero\MainUI\obj\Debug\net7.0-android\stamp\_ResolveLibraryProjectImports.stamp
+C:\WorkSpace\Qunielero\MainUI\obj\Debug\net7.0-android\android\assets\CommunityToolkit.Mvvm.dll
+C:\WorkSpace\Qunielero\MainUI\obj\Debug\net7.0-android\android\assets\CommunityToolkit.Mvvm.pdb

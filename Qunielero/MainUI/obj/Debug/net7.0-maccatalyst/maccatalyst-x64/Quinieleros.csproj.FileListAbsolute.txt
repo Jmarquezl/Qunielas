@@ -257,3 +257,4 @@ C:\WorkSpace\Qunielero\MainUI\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\refin
 C:\WorkSpace\Qunielero\MainUI\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\Quinieleros.pdb
 C:\WorkSpace\Qunielero\MainUI\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\Quinieleros.genruntimeconfig.cache
 C:\WorkSpace\Qunielero\MainUI\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\ref\Quinieleros.dll
+C:\WorkSpace\Qunielero\MainUI\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\CommunityToolkit.Mvvm.dll

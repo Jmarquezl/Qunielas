@@ -18,7 +18,7 @@ namespace Quinieleros.Models
             {
                 if (value == usuario) return;
                 usuario = value;
-                //OnPropertyChanged(nameof(Usuario));
+                OnPropertyChanged(nameof(Usuario));
             }
         }
         public string Contrasenia
@@ -28,7 +28,7 @@ namespace Quinieleros.Models
             {
                 if (value == contrasenia) return;
                 contrasenia = value;
-                //OnPropertyChanged(nameof(Contrasenia));
+                OnPropertyChanged(nameof(Contrasenia));
             }
         }
     }

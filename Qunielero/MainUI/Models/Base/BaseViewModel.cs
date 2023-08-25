@@ -8,11 +8,11 @@ using System.Threading.Tasks;
 
 namespace Quinieleros.Models.Base
 {
-    public class BaseViewModel //: INotifyPropertyChanged
+    public class BaseViewModel : INotifyPropertyChanged
     {
-        //public event PropertyChangedEventHandler PropertyChanged;
+        public event PropertyChangedEventHandler PropertyChanged;
 
-        //public void OnPropertyChanged([CallerMemberName] string name = "") =>
-        //PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name));
+        public void OnPropertyChanged([CallerMemberName] string name = "") =>
+        PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name));
     }
 }

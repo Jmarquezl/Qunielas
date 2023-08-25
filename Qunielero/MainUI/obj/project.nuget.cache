@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "QvzNHnbNb1dMsLIegZlpWroHExr+zs7t55igVWF44iICF2oeRgDRa1ERJHM7o0mgsOQT0Aktybcc1CfLKz++vw==",
+  "dgSpecHash": "lyrJNZ047swwWSmj4XZZ1X6F9aon1rVaD8O7abjUfBaV45QSOzx7HAQC4ovHYcLCXx8PW+rgj8gN1wQovfq56A==",
   "success": true,
   "projectFilePath": "C:\\WorkSpace\\Qunielero\\MainUI\\Quinieleros.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\inevi\\.nuget\\packages\\communitytoolkit.mvvm\\8.2.1\\communitytoolkit.mvvm.8.2.1.nupkg.sha512",
     "C:\\Users\\inevi\\.nuget\\packages\\googlegson\\2.9.1\\googlegson.2.9.1.nupkg.sha512",
     "C:\\Users\\inevi\\.nuget\\packages\\microsoft.extensions.configuration\\7.0.0\\microsoft.extensions.configuration.7.0.0.nupkg.sha512",
     "C:\\Users\\inevi\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\7.0.0\\microsoft.extensions.configuration.abstractions.7.0.0.nupkg.sha512",

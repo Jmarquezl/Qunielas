@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:local="clr-namespace:Quinieleros.Models"
+             xmlns:viewModels="clr-namespace:Quinieleros.ViewModels"
              x:Class="Quinieleros.Views.Login"
              Shell.NavBarIsVisible="False"
              BackgroundColor="{StaticResource Primary}"
              Title="Login">
-    <!--<ContentPage.BindingContext>
-        <local:LoginViewModel/>
-    </ContentPage.BindingContext>-->
+    <ContentPage.BindingContext>
+        <viewModels:LoginViewModel/>
+    </ContentPage.BindingContext>
     
     <Grid Margin="0,60,0,0" x:Name="grdFrame">
         <Grid.RowDefinitions>
@@ -20,8 +20,8 @@
                 <Label Text="Usuario:" FontAttributes="Bold" Margin="0,30,0,0"></Label>
                 <Entry Text="{Binding Usuario, Mode=TwoWay}" WidthRequest="300" Margin="-45,0,0,0" Placeholder="Introduce tu usuario" MaxLength="12"></Entry>
                 <Label Text="Contraseña:" FontAttributes="Bold" Margin="0,20,0,0"></Label>
-                <Entry Text="{Binding Contrasenia, Mode=TwoWay}" WidthRequest="300" Margin="-45,0,0,0" Placeholder="Introduce tu contraseña" IsPassword="True" MaxLength="16"></Entry>
-                <Button x:Name="btnLogin" Text="Login" WidthRequest="200" Margin="-30,60,0,0" Clicked="btnLogin_Clicked"></Button>
+                <Entry Text="{Binding Contrasenia, Mode=TwoWay}" WidthRequest="300" Margin="-45,0,0,0" Placeholder="Introduce tu contraseña" IsPassword="True" MaxLength="16"></Entry>                
+                <Button x:Name="btnLogin" Text="Login" WidthRequest="200" Margin="-30,60,0,0" Command="{Binding LoginCommand}"></Button>
             </VerticalStackLayout>
         </Frame>
     </Grid>

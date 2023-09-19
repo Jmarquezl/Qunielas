@@ -11,6 +11,7 @@
     </ContentPage.BindingContext>
     
     <Grid Margin="0,60,0,0" x:Name="grdFrame">
+                
         <Grid.RowDefinitions>
             <RowDefinition Height="400"></RowDefinition>
         </Grid.RowDefinitions>

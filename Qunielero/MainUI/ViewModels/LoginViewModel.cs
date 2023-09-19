@@ -27,7 +27,7 @@ namespace Quinieleros.ViewModels
                 if (value == usuario) return;
                 usuario = value;
                 OnPropertyChanged(nameof(Usuario));
-                ((Command)LoginCommand).ChangeCanExecute();
+                LoginCommand.ChangeCanExecute();
             }
         }
         public string Contrasenia
@@ -38,7 +38,7 @@ namespace Quinieleros.ViewModels
                 if (value == contrasenia) return;
                 contrasenia = value;
                 OnPropertyChanged(nameof(Contrasenia));
-                (LoginCommand as Command).ChangeCanExecute();
+                LoginCommand.ChangeCanExecute();
             }
         }
         #endregion
@@ -46,14 +46,14 @@ namespace Quinieleros.ViewModels
         #region Ctor
         public LoginViewModel()
         {
-            LoginCommand = new RelayCommand(Login, LoginCanExecute);
+            LoginCommand = new Command(Login, LoginCanExecute);
 
             ResetTemplate();
         }
         #endregion
 
         #region Commands
-        public ICommand LoginCommand { get; private set; }
+        public Command LoginCommand { get; private set; }
         #endregion
 
         #region CanExecute

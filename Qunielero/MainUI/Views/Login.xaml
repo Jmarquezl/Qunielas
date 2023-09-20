@@ -10,17 +10,16 @@
         <viewModels:LoginViewModel/>
     </ContentPage.BindingContext>
     
-    <Grid Margin="0,60,0,0" x:Name="grdFrame">
-                
+    <Grid Padding="60" x:Name="grdFrame">                
         <Grid.RowDefinitions>
             <RowDefinition Height="400"></RowDefinition>
         </Grid.RowDefinitions>
         <Frame CornerRadius="30" Grid.Row="0" WidthRequest="350">
             <VerticalStackLayout WidthRequest="350">
-                <Label Text = "Login" FontSize="32" HorizontalTextAlignment="Center" Margin="-30,0,0,0"></Label>
-                <Label Text="Usuario:" FontAttributes="Bold" Margin="0,30,0,0"></Label>
+                <Label Text = "Login" FontSize="32" HorizontalTextAlignment="Center" Margin="-60,0,0,0"></Label>
+                <Label Text="Usuario:" FontAttributes="Bold" Margin="10,30,0,0"></Label>
                 <Entry Text="{Binding Usuario, Mode=TwoWay}" WidthRequest="300" Margin="-45,0,0,0" Placeholder="Introduce tu usuario" MaxLength="12"></Entry>
-                <Label Text="Contraseña:" FontAttributes="Bold" Margin="0,20,0,0"></Label>
+                <Label Text="Contraseña:" FontAttributes="Bold" Margin="10,20,0,0"></Label>
                 <Entry Text="{Binding Contrasenia, Mode=TwoWay}" WidthRequest="300" Margin="-45,0,0,0" Placeholder="Introduce tu contraseña" IsPassword="True" MaxLength="16"></Entry>                
                 <Button x:Name="btnLogin" Text="Login" WidthRequest="200" Margin="-30,60,0,0" Command="{Binding LoginCommand}"></Button>
             </VerticalStackLayout>

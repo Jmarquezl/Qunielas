@@ -1,5 +1,6 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
+using Quinieleros.Views;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -68,7 +69,7 @@ namespace Quinieleros.ViewModels
         }
         private void Login() 
         {
-        
+            Shell.Current.GoToAsync(nameof(Rank));
         }
         #endregion
         public void ApplyQueryAttributes(IDictionary<string, object> query)

@@ -1055,3 +1055,4 @@ C:\WorkSpace\Qunielero\MainUI\obj\Debug\net7.0-android\stamp\_GeneratePackageMan
 C:\WorkSpace\Qunielero\MainUI\obj\Debug\net7.0-android\stamp\_ResolveLibraryProjectImports.stamp
 C:\WorkSpace\Qunielero\MainUI\obj\Debug\net7.0-android\android\assets\CommunityToolkit.Mvvm.dll
 C:\WorkSpace\Qunielero\MainUI\obj\Debug\net7.0-android\android\assets\CommunityToolkit.Mvvm.pdb
+C:\WorkSpace\Qunielero\MainUI\obj\Debug\net7.0-android\resizetizer\r\drawable\sport.png

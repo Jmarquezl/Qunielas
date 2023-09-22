@@ -82,6 +82,10 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Remove="Resources\Images\sport.png" />
+	</ItemGroup>
+
+	<ItemGroup>
 		<PackageReference Include="CommunityToolkit.Mvvm" Version="8.2.1" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="7.0.0" />
 	</ItemGroup>
@@ -97,7 +101,6 @@
 
 	<ItemGroup>
 	  <Folder Include="IoC\" />
-	  <Folder Include="Models\" />
 	</ItemGroup>
 
 </Project>

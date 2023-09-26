@@ -17,10 +17,10 @@
         Title="Quinieleros"
         ContentTemplate="{DataTemplate views:Login}"
         Route="/Views/MainPage" />
-    <<!--Shell.ToolbarItems>
+    <!--<Shell.ToolbarItems>
         <ToolbarItem Text="Nueva Quiniela" Order="Secondary" Command="{Binding BetCommand}" BindingContext="viewModels:RankViewModel"/>
         <ToolbarItem Text="Tabla General" Order="Secondary" Command="{Binding GeneralCommand}"/>
         <ToolbarItem Text="Bets" Order="Secondary" Command="{Binding BetsCommand}"/>
         <ToolbarItem Text="Nueva Jornada" Order="Secondary" IsEnabled="{Binding EsAdministrador}" Command="{Binding Acciones}"/>
-    </Shell.To-->olbarItems>
+    </Shell.ToolbarItems>-->
 </Shell>

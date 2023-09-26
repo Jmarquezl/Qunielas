@@ -82,7 +82,13 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Remove="Resources\Images\ajustes.png" />
+	  <None Remove="Resources\Images\bets.png" />
+	  <None Remove="Resources\Images\menuhamburguesa.png" />
+	  <None Remove="Resources\Images\nuevajornada.png" />
+	  <None Remove="Resources\Images\nuevaquiniela.png" />
 	  <None Remove="Resources\Images\sport.png" />
+	  <None Remove="Resources\Images\tablageneral.png" />
 	</ItemGroup>
 
 	<ItemGroup>

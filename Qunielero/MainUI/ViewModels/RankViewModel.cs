@@ -23,6 +23,8 @@ namespace Quinieleros.ViewModels
         #region Ctor
         public RankViewModel()
         {
+            BetCommand = new Command(Bet, BetCanExecute);
+
             Image image = new Image
             {
                 Source = ImageSource.FromFile("dotnet_bot.png")
@@ -42,15 +44,18 @@ namespace Quinieleros.ViewModels
         #endregion
 
         #region Commands
-
+        public Command BetCommand { get; private set; }
         #endregion
 
         #region CanExecute
-
+        private bool BetCanExecute() => true;
         #endregion
 
         #region Methods
-
+        private void Bet() 
+        {
+        
+        }
         #endregion
 
         #region Base

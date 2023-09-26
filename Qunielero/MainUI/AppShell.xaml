@@ -3,10 +3,12 @@
     x:Class="Quinieleros.AppShell"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:viewModels="clr-namespace:Quinieleros.ViewModels"
     xmlns:local="clr-namespace:Quinieleros"
+    xmlns:recursos="clr-namespace:resource"
     xmlns:views="clr-namespace:Quinieleros.Views"
     Shell.FlyoutBehavior="Disabled">
-
+    
     <!--<ShellContent
         Title="Bienvenido"
         ContentTemplate="{DataTemplate local:MainPage}"
@@ -15,5 +17,10 @@
         Title="Quinieleros"
         ContentTemplate="{DataTemplate views:Login}"
         Route="/Views/MainPage" />
-    
+    <<!--Shell.ToolbarItems>
+        <ToolbarItem Text="Nueva Quiniela" Order="Secondary" Command="{Binding BetCommand}" BindingContext="viewModels:RankViewModel"/>
+        <ToolbarItem Text="Tabla General" Order="Secondary" Command="{Binding GeneralCommand}"/>
+        <ToolbarItem Text="Bets" Order="Secondary" Command="{Binding BetsCommand}"/>
+        <ToolbarItem Text="Nueva Jornada" Order="Secondary" IsEnabled="{Binding EsAdministrador}" Command="{Binding Acciones}"/>
+    </Shell.To-->olbarItems>
 </Shell>

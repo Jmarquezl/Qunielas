@@ -5,6 +5,7 @@
              x:Class="Quinieleros.Views.Login"
              Shell.NavBarIsVisible="False"
              BackgroundColor="{StaticResource Primary}"
+             NavigationPage.HasBackButton="False"
              Title="Login">
     <ContentPage.BindingContext>
         <viewModels:LoginViewModel/>

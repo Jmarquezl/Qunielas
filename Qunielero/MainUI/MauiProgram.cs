@@ -1,4 +1,5 @@
 ﻿using Microsoft.Extensions.Logging;
+using Quinieleros.IoC;
 
 namespace Quinieleros
 {
@@ -14,6 +15,7 @@ namespace Quinieleros
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
                     fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
                 });
+            builder.Services.AddDependencies();
 #if DEBUG
 		builder.Logging.AddDebug();
 #endif

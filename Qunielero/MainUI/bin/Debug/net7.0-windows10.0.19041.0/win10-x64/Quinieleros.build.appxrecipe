@@ -859,6 +859,9 @@
     <AppxPackagedFile Include="C:\WorkSpace\Qunielero\MainUI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-400.png">
       <PackagePath>appiconWideTile.scale-400.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\WorkSpace\Qunielero\MainUI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\back.scale-100.png">
+      <PackagePath>back.scale-100.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\WorkSpace\Qunielero\MainUI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\bets.scale-100.png">
       <PackagePath>bets.scale-100.png</PackagePath>
     </AppxPackagedFile>

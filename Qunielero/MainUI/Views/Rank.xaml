@@ -9,17 +9,19 @@
         <viewModels:RankViewModel/>
     </ContentPage.BindingContext>
 
+    <Shell.BackButtonBehavior>
+        <BackButtonBehavior Command="{Binding BackCommand}"  />
+    </Shell.BackButtonBehavior>
+    
     <ContentPage.ToolbarItems>
         <ToolbarItem Text="Nueva Quiniela" Order="Secondary" Command="{Binding BetCommand}"/>
-        <ToolbarItem Text="Tabla General" Order="Secondary" Command="{Binding GeneralCommand}"/>
-        <ToolbarItem Text="Bets" Order="Secondary" Command="{Binding BetsCommand}"/>
-        <ToolbarItem Text="Nueva Jornada" Order="Secondary" IsEnabled="{Binding EsAdministrador}" Command="{Binding GiveAway}"/>
+        <ToolbarItem Text="Quinielas" Order="Secondary" Command="{Binding BetsCommand}"/>
+        <ToolbarItem Text="Nueva Jornada" Order="Secondary" IsEnabled="{Binding EsAdministrador}" Command="{Binding GiveAwayCommand}"/>
     </ContentPage.ToolbarItems>
     
     <Grid x:Name="grdMain" BackgroundColor="LightCyan" Margin="0,0,0,0">
         <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
-            <RowDefinition Height="60"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
@@ -58,14 +60,7 @@
                 </CollectionView.ItemTemplate>
             </CollectionView>
         </Grid>
-        <Grid x:Name="grdMenu" Grid.Row="1" BackgroundColor="DimGray" Margin="0,0,0,0">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="Auto"/>
-                <ColumnDefinition Width="Auto"/>
-                <ColumnDefinition Width="Auto"/>
-                
-            </Grid.ColumnDefinitions>
-        </Grid>
+        
 
     </Grid>
 </ContentPage>

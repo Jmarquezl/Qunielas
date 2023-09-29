@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Quinieleros.Views.Bet"
+             xmlns:viewModels="clr-namespace:Quinieleros.ViewModels"
+             Title="Nueva Quiniela">
+
+    <ContentPage.BindingContext>
+        <viewModels:BetViewModel/>
+    </ContentPage.BindingContext>
+    
+    <Shell.BackButtonBehavior>
+        <BackButtonBehavior Command="{Binding BackCommand}" IconOverride="back.png" />
+    </Shell.BackButtonBehavior>
+    
+    <VerticalStackLayout>
+        <Label 
+            Text="Arma tu quiniela"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+    </VerticalStackLayout>
+</ContentPage>

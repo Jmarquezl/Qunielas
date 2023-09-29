@@ -48,8 +48,9 @@ namespace Quinieleros.ViewModels
         public LoginViewModel()
         {
             LoginCommand = new Command(Login, LoginCanExecute);
-
             ResetTemplate();
+            Usuario = "Julio";
+            Contrasenia = "Julio";
         }
         #endregion
 

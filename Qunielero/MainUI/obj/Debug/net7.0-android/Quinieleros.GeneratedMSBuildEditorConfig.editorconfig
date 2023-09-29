@@ -38,32 +38,32 @@ build_metadata.AdditionalFiles.ManifestResourceName = Quinieleros.Resources.Styl
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
 
-[C:/WorkSpace/Qunielero/MainUI/Views/Bet.xaml]
+[C:/WorkSpace/Qunielero/MainUI/Views/BetPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = Quinieleros.Views.Bet.xaml
-build_metadata.AdditionalFiles.TargetPath = Views\Bet.xaml
-build_metadata.AdditionalFiles.RelativePath = Views\Bet.xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Quinieleros.Views.BetPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\BetPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\BetPage.xaml
 
-[C:/WorkSpace/Qunielero/MainUI/Views/General.xaml]
+[C:/WorkSpace/Qunielero/MainUI/Views/GeneralPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = Quinieleros.Views.General.xaml
-build_metadata.AdditionalFiles.TargetPath = Views\General.xaml
-build_metadata.AdditionalFiles.RelativePath = Views\General.xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Quinieleros.Views.GeneralPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\GeneralPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\GeneralPage.xaml
 
-[C:/WorkSpace/Qunielero/MainUI/Views/GiveAway.xaml]
+[C:/WorkSpace/Qunielero/MainUI/Views/HomePage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = Quinieleros.Views.GiveAway.xaml
-build_metadata.AdditionalFiles.TargetPath = Views\GiveAway.xaml
-build_metadata.AdditionalFiles.RelativePath = Views\GiveAway.xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Quinieleros.Views.HomePage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\HomePage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\HomePage.xaml
 
-[C:/WorkSpace/Qunielero/MainUI/Views/Login.xaml]
+[C:/WorkSpace/Qunielero/MainUI/Views/LoginPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = Quinieleros.Views.Login.xaml
-build_metadata.AdditionalFiles.TargetPath = Views\Login.xaml
-build_metadata.AdditionalFiles.RelativePath = Views\Login.xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Quinieleros.Views.LoginPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\LoginPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\LoginPage.xaml
 
-[C:/WorkSpace/Qunielero/MainUI/Views/Rank.xaml]
+[C:/WorkSpace/Qunielero/MainUI/Views/RankPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = Quinieleros.Views.Rank.xaml
-build_metadata.AdditionalFiles.TargetPath = Views\Rank.xaml
-build_metadata.AdditionalFiles.RelativePath = Views\Rank.xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Quinieleros.Views.RankPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\RankPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\RankPage.xaml

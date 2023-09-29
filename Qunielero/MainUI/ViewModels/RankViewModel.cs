@@ -60,7 +60,7 @@ namespace Quinieleros.ViewModels
         #region Methods
         private void NewBet() 
         {
-            Shell.Current.GoToAsync(nameof(Bet));
+            Shell.Current.GoToAsync(nameof(BetPage));
         }
         private async void NewGiveAway()
         {

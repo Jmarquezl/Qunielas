@@ -6,26 +6,32 @@
     xmlns:viewModels="clr-namespace:Quinieleros.ViewModels"
     xmlns:local="clr-namespace:Quinieleros"
     xmlns:views="clr-namespace:Quinieleros.Views"
-    Shell.FlyoutBehavior="Disabled">
+    Shell.TabBarIsVisible="False"
+    >
     
     <!--<ShellContent
         Title="Bienvenido"
         ContentTemplate="{DataTemplate local:MainPage}"
         Route="MainPage" />-->
-    <FlyoutItem FlyoutDisplayOptions="AsMultipleItems">
+    
     <ShellContent
-        Title="Quinieleros"
-        ContentTemplate="{DataTemplate views:Login}"
-        Route="/Views/MainPage"/>
+        Shell.FlyoutItemIsVisible="False"
+            Shell.FlyoutBehavior="Disabled"
+            Title="Bienvenido"
+            ContentTemplate="{DataTemplate views:LoginPage}"
+            Route="LoginPage"/>
+    
+    <FlyoutItem Route="HomePage" FlyoutDisplayOptions="AsMultipleItems" >    
         <ShellContent
-        Title="Rank"
-        Icon="bets.png"
-        ContentTemplate="{DataTemplate views:Rank}"
-        Route="/Views/Rank" />
+            Title="Rank"
+            Icon="bets.png"
+            ContentTemplate="{DataTemplate views:RankPage}"
+            Route="/Views/RankPage"
+             />
         <ShellContent
-        Title="General"
-        Icon="tablageneral.png"
-        ContentTemplate="{DataTemplate views:General}"
-        Route="/Views/General" />
+            Title="General"
+            Icon="tablageneral.png"
+            ContentTemplate="{DataTemplate views:GeneralPage}"
+             />
     </FlyoutItem>
 </Shell>

@@ -26,19 +26,19 @@
     <MauiXaml Update="Resources\Styles\Styles.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
-    <MauiXaml Update="Views\Bet.xaml">
+    <MauiXaml Update="Views\BetPage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
-    <MauiXaml Update="Views\General.xaml">
+    <MauiXaml Update="Views\GeneralPage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
-    <MauiXaml Update="Views\GiveAway.xaml">
+    <MauiXaml Update="Views\HomePage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
-    <MauiXaml Update="Views\Login.xaml">
+    <MauiXaml Update="Views\LoginPage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
-    <MauiXaml Update="Views\Rank.xaml">
+    <MauiXaml Update="Views\RankPage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
   </ItemGroup>

@@ -40,7 +40,7 @@ namespace Quinieleros.ViewModels
         #region Method
         public void Back()
         {
-            Shell.Current.GoToAsync(nameof(Rank));
+            Shell.Current.GoToAsync(nameof(RankPage));
         }
         private void ResetTemplate()
         {

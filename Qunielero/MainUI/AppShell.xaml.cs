@@ -7,9 +7,9 @@ namespace Quinieleros
         public AppShell()
         {
             InitializeComponent();
-            Routing.RegisterRoute(nameof(Rank), typeof(Rank));
-            Routing.RegisterRoute(nameof(Bet), typeof(Bet));
-            Routing.RegisterRoute(nameof(GiveAway), typeof(GiveAway));
+            Routing.RegisterRoute(nameof(HomePage), typeof(HomePage));
+            Routing.RegisterRoute(nameof(RankPage), typeof(RankPage));
+            Routing.RegisterRoute(nameof(BetPage), typeof(BetPage));
         }
     }
 }

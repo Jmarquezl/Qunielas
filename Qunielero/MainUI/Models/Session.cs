@@ -11,6 +11,7 @@ namespace Quinieleros.Models
         private static int idUsuario;
         private static int usuario;
         private static bool administrador;
+        private static bool quinielaActiva;
         private static string avatar;
 
     }

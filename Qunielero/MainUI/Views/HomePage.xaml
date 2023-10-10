@@ -3,22 +3,14 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Quinieleros.Views.HomePage"
              xmlns:viewModels="clr-namespace:Quinieleros.ViewModels"
-             NavigationPage.HasBackButton="False"
-             NavigationPage.HasNavigationBar="False"
              Title="Bienvenido">
     <ContentPage.BindingContext>
         <viewModels:HomeViewModel/>
     </ContentPage.BindingContext>
-    
-    <Shell.BackButtonBehavior>
-        <BackButtonBehavior IsVisible="False" IsEnabled="False" NavigationPage.HasNavigationBar="False"/>
-    </Shell.BackButtonBehavior>
         
-    <ContentPage.ToolbarItems>
-        <ToolbarItem Text="Nueva Quiniela" Order="Secondary" Command="{Binding BetCommand}"/>
-        <ToolbarItem Text="Quinielas" Order="Secondary" Command="{Binding BetsCommand}"/>
-        <ToolbarItem Text="Nueva Jornada" Order="Secondary" IsEnabled="{Binding EsAdministrador}" Command="{Binding GiveAwayCommand}"/>
-    </ContentPage.ToolbarItems>
+    <Shell.BackButtonBehavior>
+        <BackButtonBehavior IsVisible="False" IsEnabled="True" NavigationPage.HasNavigationBar="True"/>
+    </Shell.BackButtonBehavior>
     
     <VerticalStackLayout>
         <Label 

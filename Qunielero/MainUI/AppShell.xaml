@@ -18,15 +18,20 @@
         Shell.FlyoutItemIsVisible="False"
             Shell.FlyoutBehavior="Disabled"
             Title="Bienvenido"
-            ContentTemplate="{DataTemplate views:LoginPage}"
-            Route="LoginPage"/>
-    
-    <FlyoutItem Route="HomePage" FlyoutDisplayOptions="AsMultipleItems" >    
+            ContentTemplate="{DataTemplate views:LoginPage}"/>
+
+
+    <FlyoutItem FlyoutDisplayOptions="AsMultipleItems">
+        <ShellContent
+            Title="Bienvenido"
+            Icon="nuevajornada.png"
+            ContentTemplate="{DataTemplate views:HomePage}"
+            Route="HomePage"
+             />
         <ShellContent
             Title="Rank"
             Icon="bets.png"
             ContentTemplate="{DataTemplate views:RankPage}"
-            Route="/Views/RankPage"
              />
         <ShellContent
             Title="General"
@@ -34,4 +39,16 @@
             ContentTemplate="{DataTemplate views:GeneralPage}"
              />
     </FlyoutItem>
+
+    <Shell.FlyoutFooter>
+        <StackLayout BackgroundColor="DarkSeaGreen">
+            <Label Text="JCML"              
+              FontAttributes="Bold"
+              HorizontalOptions="Center" />
+            <Label Text="V.1.0.0.0"
+              TextColor="Black"
+              HorizontalOptions="Center" />
+        </StackLayout>
+    </Shell.FlyoutFooter>
+    
 </Shell>

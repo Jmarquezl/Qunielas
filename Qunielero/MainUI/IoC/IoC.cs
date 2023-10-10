@@ -15,12 +15,14 @@ namespace Quinieleros.IoC
         {
             service.AddTransient<IAlertService, AlertService>();
             //Views
+            service.AddSingleton<HomePage>();
             service.AddSingleton<BetPage>();
             service.AddSingleton<GeneralPage>();
             service.AddSingleton<LoginPage>();
             service.AddSingleton<RankPage>();
 
             //ViewModels
+            service.AddSingleton<HomeViewModel>();
             service.AddSingleton<BetViewModel>();
             service.AddSingleton<GeneralViewModel>();
             service.AddSingleton<LoginViewModel>();

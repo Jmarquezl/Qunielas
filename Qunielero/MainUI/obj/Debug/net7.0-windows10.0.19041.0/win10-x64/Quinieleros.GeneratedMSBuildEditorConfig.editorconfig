@@ -34,6 +34,12 @@ build_metadata.AdditionalFiles.ManifestResourceName = Quinieleros.Resources.Styl
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
 
+[C:/WorkSpace/Qunielero/MainUI/Resources/Styles/StylesStatic.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Quinieleros.Resources.Styles.StylesStatic.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\StylesStatic.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\StylesStatic.xaml
+
 [C:/WorkSpace/Qunielero/MainUI/Views/BetPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Quinieleros.Views.BetPage.xaml

@@ -70,7 +70,7 @@ namespace Quinieleros.ViewModels
         }
         private void Login() 
         {
-            Shell.Current.GoToAsync(nameof(HomePage));
+            Shell.Current.GoToAsync($"//{nameof(HomePage)}");
         }
         #endregion
         public void ApplyQueryAttributes(IDictionary<string, object> query)

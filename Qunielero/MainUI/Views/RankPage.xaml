@@ -13,7 +13,7 @@
         <BackButtonBehavior Command="{Binding BackCommand}"/>
     </Shell.BackButtonBehavior>
         
-    <Grid x:Name="grdMain" BackgroundColor="LightCyan" Margin="0,0,0,0">
+    <Grid x:Name="grdMain" Margin="0,0,0,0">
         <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
@@ -21,14 +21,14 @@
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
 
-        <Grid x:Name="grdRank" Grid.Row="0" BackgroundColor="LightCyan" Margin="30,10,30,10">
+        <Grid x:Name="grdRank" Grid.Row="0" Margin="30,10,30,10">
             <CollectionView x:Name="lsQuinielas" ItemsSource="{Binding Quinielas}">
                 <CollectionView.ItemsLayout>
                     <LinearItemsLayout Orientation="Vertical" />
                 </CollectionView.ItemsLayout>
                 <CollectionView.ItemTemplate>
                     <DataTemplate>
-                        <Grid x:Name="grdQuinielas" Margin="15,10,15,10">
+                        <Grid x:Name="grdQuinielas" Margin="0,10,15,10">
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition Width="Auto"/>
                                 <ColumnDefinition Width="Auto"/>

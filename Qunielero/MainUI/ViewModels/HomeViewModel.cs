@@ -23,7 +23,6 @@ namespace Quinieleros.ViewModels
         {
             BetCommand = new Command(NewBet, BetCanExecute);
             GiveAwayCommand = new Command(NewGiveAway, GiveAwayCanExecute);
-
         }
         #endregion
 

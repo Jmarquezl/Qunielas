@@ -4,7 +4,6 @@
              x:Class="Quinieleros.Views.BetPage"
              xmlns:viewModels="clr-namespace:Quinieleros.ViewModels"
              Title="Nueva Quiniela">
-
     <ContentPage.BindingContext>
         <viewModels:BetViewModel/>
     </ContentPage.BindingContext>

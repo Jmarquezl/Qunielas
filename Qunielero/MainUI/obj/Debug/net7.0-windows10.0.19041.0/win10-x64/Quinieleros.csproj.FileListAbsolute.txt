@@ -329,3 +329,12 @@ C:\WorkSpace\Qunielero\MainUI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\qua
 C:\WorkSpace\Qunielero\MainUI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\qualifiers.txt.intermediate
 C:\WorkSpace\Qunielero\MainUI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\MultipleQualifiersPerDimensionFound.txt
 C:\WorkSpace\Qunielero\MainUI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\ProjectArchitectures.txt
+C:\WorkSpace\Qunielero\MainUI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\usuario.scale-100.png
+C:\WorkSpace\Qunielero\MainUI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\jornada.scale-100.png
+C:\WorkSpace\Qunielero\MainUI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\jornada16.scale-100.png
+C:\WorkSpace\Qunielero\MainUI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\jornada24.scale-100.png
+C:\WorkSpace\Qunielero\MainUI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashcupSplashScreen.scale-100.png
+C:\WorkSpace\Qunielero\MainUI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashcupSplashScreen.scale-125.png
+C:\WorkSpace\Qunielero\MainUI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashcupSplashScreen.scale-150.png
+C:\WorkSpace\Qunielero\MainUI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashcupSplashScreen.scale-200.png
+C:\WorkSpace\Qunielero\MainUI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashcupSplashScreen.scale-400.png

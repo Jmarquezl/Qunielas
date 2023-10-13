@@ -8,12 +8,7 @@
     xmlns:views="clr-namespace:Quinieleros.Views"
     Shell.TabBarIsVisible="False"
     >
-    
-    <!--<ShellContent
-        Title="Bienvenido"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />-->
-    
+        
     <ShellContent
         Shell.FlyoutItemIsVisible="False"
             Shell.FlyoutBehavior="Disabled"
@@ -38,15 +33,37 @@
             Icon="tablageneral.png"
             ContentTemplate="{DataTemplate views:GeneralPage}"
              />
+        <ShellContent
+            Title="Nueva Quiniela"
+            Icon="nuevaquiniela.png"
+            ContentTemplate="{DataTemplate views:BetPage}"
+             />
     </FlyoutItem>
 
+    <Shell.FlyoutHeaderTemplate>
+        <DataTemplate>
+            <Grid BackgroundColor="{StaticResource Secondary}"
+                  HeightRequest="130">
+                <Image Aspect="Center"
+                       Source="usuario.png"
+                       Opacity="0.5" />
+                <Label Text="Usuario"
+                       TextColor="White"
+                       FontAttributes="Bold"
+                       HorizontalTextAlignment="Center"
+                       VerticalTextAlignment="End" />
+            </Grid>
+        </DataTemplate>
+    </Shell.FlyoutHeaderTemplate>
+
     <Shell.FlyoutFooter>
-        <StackLayout BackgroundColor="DarkSeaGreen">
-            <Label Text="JCML"              
+        <StackLayout BackgroundColor="{StaticResource Secondary}">
+            <Label Text="JCML"  
+              TextColor="White"
               FontAttributes="Bold"
               HorizontalOptions="Center" />
             <Label Text="V.1.0.0.0"
-              TextColor="Black"
+              TextColor="White"
               HorizontalOptions="Center" />
         </StackLayout>
     </Shell.FlyoutFooter>

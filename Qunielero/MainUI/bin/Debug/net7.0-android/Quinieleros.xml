@@ -4,6 +4,12 @@
         <name>Quinieleros</name>
     </assembly>
     <members>
+        <member name="T:Quinieleros.ViewModels.HomeViewModel">
+            <inheritdoc/>
+        </member>
+        <member name="P:Quinieleros.ViewModels.HomeViewModel.Registros">
+            <inheritdoc cref="F:Quinieleros.ViewModels.HomeViewModel.registros"/>
+        </member>
         <member name="T:Quinieleros.ViewModels.RankViewModel">
             <inheritdoc/>
         </member>
@@ -16,6 +22,9 @@
             for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
             </summary>
         </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Registros">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Registros" generated properties.</summary>
+        </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Quinielas">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Quinielas" generated properties.</summary>
         </member>
@@ -24,6 +33,9 @@
             A helper type providing cached, reusable <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instances
             for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
             </summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Registros">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Registros" generated properties.</summary>
         </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Quinielas">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Quinielas" generated properties.</summary>

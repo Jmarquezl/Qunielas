@@ -19,7 +19,7 @@
     <WindowsSdkPath>
     </WindowsSdkPath>
     <LayoutDir>C:\WorkSpace\Qunielero\MainUI\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\AppX</LayoutDir>
-    <RegisteredManifestChecksum>823463636825DEF47C9FFFFA9043ABA3145305BC9E6F056EE8BC2A207502D5B8</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>C0E6F7B555FBF8232B82C2DFBFBA6B7160EFF0A4C688D0E1155770A34EC903E7</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>811b8663-aa52-473e-b39a-7929ff6138d1_1.0.0.1_x64__9zz4h110yvjzm</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>811b8663-aa52-473e-b39a-7929ff6138d1_9zz4h110yvjzm!App</RegisteredUserModeAppID>
     <RegisteredPackageID>811b8663-aa52-473e-b39a-7929ff6138d1</RegisteredPackageID>
@@ -30,13 +30,13 @@
     <AppXManifest Include="C:\WorkSpace\Qunielero\MainUI\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-10-10T06:01:16.403</Modified>
+      <Modified>2023-10-13T03:48:35.718</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\WorkSpace\Qunielero\MainUI\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2023-10-10T06:01:15.993</Modified>
+      <Modified>2023-10-13T03:48:35.315</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\WorkSpace\Qunielero\MainUI\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Quinieleros.runtimeconfig.json">
       <PackagePath>Quinieleros.runtimeconfig.json</PackagePath>
@@ -44,11 +44,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\WorkSpace\Qunielero\MainUI\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Quinieleros.dll">
       <PackagePath>Quinieleros.dll</PackagePath>
-      <Modified>2023-10-10T06:01:13.818</Modified>
+      <Modified>2023-10-13T03:48:34.323</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\WorkSpace\Qunielero\MainUI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>Quinieleros.exe</PackagePath>
-      <Modified>2023-10-10T06:01:13.845</Modified>
+      <Modified>2023-10-13T03:48:34.344</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\inevi\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.0\runtimes\win-x64\lib\net7.0\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -912,7 +912,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\WorkSpace\Qunielero\MainUI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\Quinieleros.deps.json">
       <PackagePath>Quinieleros.deps.json</PackagePath>
-      <Modified>2023-10-10T06:01:16.226</Modified>
+      <Modified>2023-10-13T03:48:35.538</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files\dotnet\packs\Microsoft.Maui.Controls.Ref.win\7.0.49\ref\net7.0-windows10.0.19041\Microsoft.Maui.Controls.Compatibility.pri">
       <PackagePath>Microsoft.Maui.Controls.Compatibility.pri</PackagePath>
@@ -950,6 +950,26 @@
       <PackagePath>splashbalonSplashScreen.scale-400.png</PackagePath>
       <Modified>2023-10-10T05:32:50.579</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\WorkSpace\Qunielero\MainUI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashcupSplashScreen.scale-100.png">
+      <PackagePath>splashcupSplashScreen.scale-100.png</PackagePath>
+      <Modified>2023-10-13T03:43:36.613</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\WorkSpace\Qunielero\MainUI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashcupSplashScreen.scale-125.png">
+      <PackagePath>splashcupSplashScreen.scale-125.png</PackagePath>
+      <Modified>2023-10-13T03:43:36.627</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\WorkSpace\Qunielero\MainUI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashcupSplashScreen.scale-150.png">
+      <PackagePath>splashcupSplashScreen.scale-150.png</PackagePath>
+      <Modified>2023-10-13T03:43:36.646</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\WorkSpace\Qunielero\MainUI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashcupSplashScreen.scale-200.png">
+      <PackagePath>splashcupSplashScreen.scale-200.png</PackagePath>
+      <Modified>2023-10-13T03:43:36.677</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\WorkSpace\Qunielero\MainUI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashcupSplashScreen.scale-400.png">
+      <PackagePath>splashcupSplashScreen.scale-400.png</PackagePath>
+      <Modified>2023-10-13T03:43:36.801</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\WorkSpace\Qunielero\MainUI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Regular.ttf">
       <PackagePath>OpenSans-Regular.ttf</PackagePath>
       <Modified>2023-08-22T04:37:03.560</Modified>
@@ -964,187 +984,187 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\WorkSpace\Qunielero\MainUI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appicon2.ico">
       <PackagePath>appicon2.ico</PackagePath>
-      <Modified>2023-10-10T05:32:50.669</Modified>
+      <Modified>2023-10-13T03:43:36.881</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\WorkSpace\Qunielero\MainUI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appicon2LargeTile.scale-100.png">
       <PackagePath>appicon2LargeTile.scale-100.png</PackagePath>
-      <Modified>2023-10-10T05:32:51.055</Modified>
+      <Modified>2023-10-13T03:43:37.154</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\WorkSpace\Qunielero\MainUI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appicon2LargeTile.scale-125.png">
       <PackagePath>appicon2LargeTile.scale-125.png</PackagePath>
-      <Modified>2023-10-10T05:32:51.073</Modified>
+      <Modified>2023-10-13T03:43:37.167</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\WorkSpace\Qunielero\MainUI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appicon2LargeTile.scale-150.png">
       <PackagePath>appicon2LargeTile.scale-150.png</PackagePath>
-      <Modified>2023-10-10T05:32:51.088</Modified>
+      <Modified>2023-10-13T03:43:37.178</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\WorkSpace\Qunielero\MainUI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appicon2LargeTile.scale-200.png">
       <PackagePath>appicon2LargeTile.scale-200.png</PackagePath>
-      <Modified>2023-10-10T05:32:51.112</Modified>
+      <Modified>2023-10-13T03:43:37.197</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\WorkSpace\Qunielero\MainUI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appicon2LargeTile.scale-400.png">
       <PackagePath>appicon2LargeTile.scale-400.png</PackagePath>
-      <Modified>2023-10-10T05:32:51.227</Modified>
+      <Modified>2023-10-13T03:43:37.265</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\WorkSpace\Qunielero\MainUI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appicon2Logo.altform-lightunplated_targetsize-16.png">
       <PackagePath>appicon2Logo.altform-lightunplated_targetsize-16.png</PackagePath>
-      <Modified>2023-10-10T05:32:50.772</Modified>
+      <Modified>2023-10-13T03:43:36.962</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\WorkSpace\Qunielero\MainUI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appicon2Logo.altform-lightunplated_targetsize-24.png">
       <PackagePath>appicon2Logo.altform-lightunplated_targetsize-24.png</PackagePath>
-      <Modified>2023-10-10T05:32:50.776</Modified>
+      <Modified>2023-10-13T03:43:36.965</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\WorkSpace\Qunielero\MainUI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appicon2Logo.altform-lightunplated_targetsize-256.png">
       <PackagePath>appicon2Logo.altform-lightunplated_targetsize-256.png</PackagePath>
-      <Modified>2023-10-10T05:32:50.798</Modified>
+      <Modified>2023-10-13T03:43:36.982</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\WorkSpace\Qunielero\MainUI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appicon2Logo.altform-lightunplated_targetsize-32.png">
       <PackagePath>appicon2Logo.altform-lightunplated_targetsize-32.png</PackagePath>
-      <Modified>2023-10-10T05:32:50.782</Modified>
+      <Modified>2023-10-13T03:43:36.968</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\WorkSpace\Qunielero\MainUI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appicon2Logo.altform-lightunplated_targetsize-48.png">
       <PackagePath>appicon2Logo.altform-lightunplated_targetsize-48.png</PackagePath>
-      <Modified>2023-10-10T05:32:50.786</Modified>
+      <Modified>2023-10-13T03:43:36.973</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\WorkSpace\Qunielero\MainUI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appicon2Logo.altform-unplated_targetsize-16.png">
       <PackagePath>appicon2Logo.altform-unplated_targetsize-16.png</PackagePath>
-      <Modified>2023-10-10T05:32:50.743</Modified>
+      <Modified>2023-10-13T03:43:36.938</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\WorkSpace\Qunielero\MainUI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appicon2Logo.altform-unplated_targetsize-24.png">
       <PackagePath>appicon2Logo.altform-unplated_targetsize-24.png</PackagePath>
-      <Modified>2023-10-10T05:32:50.748</Modified>
+      <Modified>2023-10-13T03:43:36.941</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\WorkSpace\Qunielero\MainUI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appicon2Logo.altform-unplated_targetsize-256.png">
       <PackagePath>appicon2Logo.altform-unplated_targetsize-256.png</PackagePath>
-      <Modified>2023-10-10T05:32:50.769</Modified>
+      <Modified>2023-10-13T03:43:36.958</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\WorkSpace\Qunielero\MainUI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appicon2Logo.altform-unplated_targetsize-32.png">
       <PackagePath>appicon2Logo.altform-unplated_targetsize-32.png</PackagePath>
-      <Modified>2023-10-10T05:32:50.754</Modified>
+      <Modified>2023-10-13T03:43:36.946</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\WorkSpace\Qunielero\MainUI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appicon2Logo.altform-unplated_targetsize-48.png">
       <PackagePath>appicon2Logo.altform-unplated_targetsize-48.png</PackagePath>
-      <Modified>2023-10-10T05:32:50.758</Modified>
+      <Modified>2023-10-13T03:43:36.950</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\WorkSpace\Qunielero\MainUI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appicon2Logo.scale-100.png">
       <PackagePath>appicon2Logo.scale-100.png</PackagePath>
-      <Modified>2023-10-10T05:32:50.689</Modified>
+      <Modified>2023-10-13T03:43:36.890</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\WorkSpace\Qunielero\MainUI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appicon2Logo.scale-125.png">
       <PackagePath>appicon2Logo.scale-125.png</PackagePath>
-      <Modified>2023-10-10T05:32:50.695</Modified>
+      <Modified>2023-10-13T03:43:36.895</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\WorkSpace\Qunielero\MainUI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appicon2Logo.scale-150.png">
       <PackagePath>appicon2Logo.scale-150.png</PackagePath>
-      <Modified>2023-10-10T05:32:50.700</Modified>
+      <Modified>2023-10-13T03:43:36.899</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\WorkSpace\Qunielero\MainUI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appicon2Logo.scale-200.png">
       <PackagePath>appicon2Logo.scale-200.png</PackagePath>
-      <Modified>2023-10-10T05:32:50.705</Modified>
+      <Modified>2023-10-13T03:43:36.903</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\WorkSpace\Qunielero\MainUI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appicon2Logo.scale-400.png">
       <PackagePath>appicon2Logo.scale-400.png</PackagePath>
-      <Modified>2023-10-10T05:32:50.712</Modified>
+      <Modified>2023-10-13T03:43:36.910</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\WorkSpace\Qunielero\MainUI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appicon2Logo.targetsize-16.png">
       <PackagePath>appicon2Logo.targetsize-16.png</PackagePath>
-      <Modified>2023-10-10T05:32:50.717</Modified>
+      <Modified>2023-10-13T03:43:36.913</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\WorkSpace\Qunielero\MainUI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appicon2Logo.targetsize-24.png">
       <PackagePath>appicon2Logo.targetsize-24.png</PackagePath>
-      <Modified>2023-10-10T05:32:50.721</Modified>
+      <Modified>2023-10-13T03:43:36.918</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\WorkSpace\Qunielero\MainUI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appicon2Logo.targetsize-256.png">
       <PackagePath>appicon2Logo.targetsize-256.png</PackagePath>
-      <Modified>2023-10-10T05:32:50.739</Modified>
+      <Modified>2023-10-13T03:43:36.934</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\WorkSpace\Qunielero\MainUI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appicon2Logo.targetsize-32.png">
       <PackagePath>appicon2Logo.targetsize-32.png</PackagePath>
-      <Modified>2023-10-10T05:32:50.725</Modified>
+      <Modified>2023-10-13T03:43:36.922</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\WorkSpace\Qunielero\MainUI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appicon2Logo.targetsize-48.png">
       <PackagePath>appicon2Logo.targetsize-48.png</PackagePath>
-      <Modified>2023-10-10T05:32:50.730</Modified>
+      <Modified>2023-10-13T03:43:36.925</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\WorkSpace\Qunielero\MainUI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appicon2MediumTile.scale-100.png">
       <PackagePath>appicon2MediumTile.scale-100.png</PackagePath>
-      <Modified>2023-10-10T05:32:50.871</Modified>
+      <Modified>2023-10-13T03:43:37.034</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\WorkSpace\Qunielero\MainUI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appicon2MediumTile.scale-125.png">
       <PackagePath>appicon2MediumTile.scale-125.png</PackagePath>
-      <Modified>2023-10-10T05:32:50.879</Modified>
+      <Modified>2023-10-13T03:43:37.039</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\WorkSpace\Qunielero\MainUI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appicon2MediumTile.scale-150.png">
       <PackagePath>appicon2MediumTile.scale-150.png</PackagePath>
-      <Modified>2023-10-10T05:32:50.889</Modified>
+      <Modified>2023-10-13T03:43:37.046</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\WorkSpace\Qunielero\MainUI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appicon2MediumTile.scale-200.png">
       <PackagePath>appicon2MediumTile.scale-200.png</PackagePath>
-      <Modified>2023-10-10T05:32:50.906</Modified>
+      <Modified>2023-10-13T03:43:37.056</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\WorkSpace\Qunielero\MainUI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appicon2MediumTile.scale-400.png">
       <PackagePath>appicon2MediumTile.scale-400.png</PackagePath>
-      <Modified>2023-10-10T05:32:50.932</Modified>
+      <Modified>2023-10-13T03:43:37.074</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\WorkSpace\Qunielero\MainUI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appicon2SmallTile.scale-100.png">
       <PackagePath>appicon2SmallTile.scale-100.png</PackagePath>
-      <Modified>2023-10-10T05:32:50.833</Modified>
+      <Modified>2023-10-13T03:43:37.007</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\WorkSpace\Qunielero\MainUI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appicon2SmallTile.scale-125.png">
       <PackagePath>appicon2SmallTile.scale-125.png</PackagePath>
-      <Modified>2023-10-10T05:32:50.837</Modified>
+      <Modified>2023-10-13T03:43:37.011</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\WorkSpace\Qunielero\MainUI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appicon2SmallTile.scale-150.png">
       <PackagePath>appicon2SmallTile.scale-150.png</PackagePath>
-      <Modified>2023-10-10T05:32:50.844</Modified>
+      <Modified>2023-10-13T03:43:37.015</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\WorkSpace\Qunielero\MainUI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appicon2SmallTile.scale-200.png">
       <PackagePath>appicon2SmallTile.scale-200.png</PackagePath>
-      <Modified>2023-10-10T05:32:50.851</Modified>
+      <Modified>2023-10-13T03:43:37.019</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\WorkSpace\Qunielero\MainUI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appicon2SmallTile.scale-400.png">
       <PackagePath>appicon2SmallTile.scale-400.png</PackagePath>
-      <Modified>2023-10-10T05:32:50.863</Modified>
+      <Modified>2023-10-13T03:43:37.029</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\WorkSpace\Qunielero\MainUI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appicon2StoreLogo.scale-100.png">
       <PackagePath>appicon2StoreLogo.scale-100.png</PackagePath>
-      <Modified>2023-10-10T05:32:50.802</Modified>
+      <Modified>2023-10-13T03:43:36.985</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\WorkSpace\Qunielero\MainUI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appicon2StoreLogo.scale-125.png">
       <PackagePath>appicon2StoreLogo.scale-125.png</PackagePath>
-      <Modified>2023-10-10T05:32:50.806</Modified>
+      <Modified>2023-10-13T03:43:36.988</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\WorkSpace\Qunielero\MainUI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appicon2StoreLogo.scale-150.png">
       <PackagePath>appicon2StoreLogo.scale-150.png</PackagePath>
-      <Modified>2023-10-10T05:32:50.812</Modified>
+      <Modified>2023-10-13T03:43:36.993</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\WorkSpace\Qunielero\MainUI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appicon2StoreLogo.scale-200.png">
       <PackagePath>appicon2StoreLogo.scale-200.png</PackagePath>
-      <Modified>2023-10-10T05:32:50.818</Modified>
+      <Modified>2023-10-13T03:43:36.997</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\WorkSpace\Qunielero\MainUI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appicon2StoreLogo.scale-400.png">
       <PackagePath>appicon2StoreLogo.scale-400.png</PackagePath>
-      <Modified>2023-10-10T05:32:50.827</Modified>
+      <Modified>2023-10-13T03:43:37.003</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\WorkSpace\Qunielero\MainUI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appicon2WideTile.scale-100.png">
       <PackagePath>appicon2WideTile.scale-100.png</PackagePath>
-      <Modified>2023-10-10T05:32:50.941</Modified>
+      <Modified>2023-10-13T03:43:37.080</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\WorkSpace\Qunielero\MainUI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appicon2WideTile.scale-125.png">
       <PackagePath>appicon2WideTile.scale-125.png</PackagePath>
-      <Modified>2023-10-10T05:32:50.957</Modified>
+      <Modified>2023-10-13T03:43:37.086</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\WorkSpace\Qunielero\MainUI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appicon2WideTile.scale-150.png">
       <PackagePath>appicon2WideTile.scale-150.png</PackagePath>
-      <Modified>2023-10-10T05:32:50.986</Modified>
+      <Modified>2023-10-13T03:43:37.096</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\WorkSpace\Qunielero\MainUI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appicon2WideTile.scale-200.png">
       <PackagePath>appicon2WideTile.scale-200.png</PackagePath>
-      <Modified>2023-10-10T05:32:51.007</Modified>
+      <Modified>2023-10-13T03:43:37.110</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\WorkSpace\Qunielero\MainUI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appicon2WideTile.scale-400.png">
       <PackagePath>appicon2WideTile.scale-400.png</PackagePath>
-      <Modified>2023-10-10T05:32:51.045</Modified>
+      <Modified>2023-10-13T03:43:37.143</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\WorkSpace\Qunielero\MainUI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\back.scale-100.png">
       <PackagePath>back.scale-100.png</PackagePath>
@@ -1160,23 +1180,35 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\WorkSpace\Qunielero\MainUI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-100.png">
       <PackagePath>dotnet_bot.scale-100.png</PackagePath>
-      <Modified>2023-10-10T05:32:50.708</Modified>
+      <Modified>2023-10-13T03:43:36.894</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\WorkSpace\Qunielero\MainUI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-125.png">
       <PackagePath>dotnet_bot.scale-125.png</PackagePath>
-      <Modified>2023-10-10T05:32:50.720</Modified>
+      <Modified>2023-10-13T03:43:36.905</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\WorkSpace\Qunielero\MainUI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-150.png">
       <PackagePath>dotnet_bot.scale-150.png</PackagePath>
-      <Modified>2023-10-10T05:32:50.737</Modified>
+      <Modified>2023-10-13T03:43:36.918</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\WorkSpace\Qunielero\MainUI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-200.png">
       <PackagePath>dotnet_bot.scale-200.png</PackagePath>
-      <Modified>2023-10-10T05:32:50.762</Modified>
+      <Modified>2023-10-13T03:43:36.937</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\WorkSpace\Qunielero\MainUI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png">
       <PackagePath>dotnet_bot.scale-400.png</PackagePath>
-      <Modified>2023-10-10T05:32:50.820</Modified>
+      <Modified>2023-10-13T03:43:36.982</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\WorkSpace\Qunielero\MainUI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\jornada.scale-100.png">
+      <PackagePath>jornada.scale-100.png</PackagePath>
+      <Modified>2023-10-11T04:52:23.803</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\WorkSpace\Qunielero\MainUI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\jornada16.scale-100.png">
+      <PackagePath>jornada16.scale-100.png</PackagePath>
+      <Modified>2023-10-11T05:06:41.680</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\WorkSpace\Qunielero\MainUI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\jornada24.scale-100.png">
+      <PackagePath>jornada24.scale-100.png</PackagePath>
+      <Modified>2023-10-11T05:08:45.826</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\WorkSpace\Qunielero\MainUI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\menuhamburguesa.scale-100.png">
       <PackagePath>menuhamburguesa.scale-100.png</PackagePath>
@@ -1197,6 +1229,10 @@
     <AppxPackagedFile Include="C:\WorkSpace\Qunielero\MainUI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\tablageneral.scale-100.png">
       <PackagePath>tablageneral.scale-100.png</PackagePath>
       <Modified>2023-09-26T06:12:47.527</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\WorkSpace\Qunielero\MainUI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\usuario.scale-100.png">
+      <PackagePath>usuario.scale-100.png</PackagePath>
+      <Modified>2023-10-11T04:11:23.824</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

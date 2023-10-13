@@ -23,7 +23,7 @@
             <uap:ShowOn Tile="wide310x150Logo" />
           </uap:ShowNameOnTiles>
         </uap:DefaultTile>
-        <uap:SplashScreen Image="splashbalonSplashScreen.png" />
+        <uap:SplashScreen Image="splashcupSplashScreen.png" />
       </uap:VisualElements>
     </Application>
   </Applications>

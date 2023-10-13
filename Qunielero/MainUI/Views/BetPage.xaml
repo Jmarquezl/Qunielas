@@ -4,14 +4,11 @@
              x:Class="Quinieleros.Views.BetPage"
              xmlns:viewModels="clr-namespace:Quinieleros.ViewModels"
              Title="Nueva Quiniela">
+    
     <ContentPage.BindingContext>
         <viewModels:BetViewModel/>
     </ContentPage.BindingContext>
-    
-    <Shell.BackButtonBehavior>
-        <BackButtonBehavior Command="{Binding BackCommand}" IconOverride="back.png" />
-    </Shell.BackButtonBehavior>
-    
+        
     <VerticalStackLayout>
         <Label 
             Text="Arma tu quiniela"

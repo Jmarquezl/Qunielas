@@ -66,13 +66,13 @@
 	<ItemGroup>
 		<!-- App Icon -->
 		<MauiIcon Include="Resources\AppIcon\appicon2.svg">
-		  <Color>#1CC314</Color>
-		  <ForegroundFile>Resources\AppIcon\appiconfg.svg</ForegroundFile>
+		  <Color>#db901b</Color>
+		  <ForegroundFile>Resources\AppIcon\appiconfg2.svg</ForegroundFile>
 		</MauiIcon>
-		<MauiIcon Include="Resources\AppIcon\appicon2.svg" ForegroundFile="Resources\AppIcon\appiconfg2.svg" Color="#1CC314" />
-		<MauiSplashScreen Include="Resources\Splash\splashbalon.svg">
-		  <Color>#33FF7A</Color>
-		  <BaseSize>128,128</BaseSize>
+		<MauiIcon Include="Resources\AppIcon\appicon2.svg" ForegroundFile="Resources\AppIcon\appiconfg2.svg" Color="#db901b" />
+		<MauiSplashScreen Include="Resources\Splash\splashcup.svg">
+		  <Color>#db901b</Color>
+		  <BaseSize>140,140</BaseSize>
 		</MauiSplashScreen>
 
 		<!-- Splash Screen -->
@@ -94,11 +94,15 @@
 	  <None Remove="Resources\Images\back.png" />
 	  <None Remove="Resources\Images\balon.png" />
 	  <None Remove="Resources\Images\bets.png" />
+	  <None Remove="Resources\Images\jornada.png" />
+	  <None Remove="Resources\Images\jornada16.png" />
+	  <None Remove="Resources\Images\jornada24.png" />
 	  <None Remove="Resources\Images\menuhamburguesa.png" />
 	  <None Remove="Resources\Images\nuevajornada.png" />
 	  <None Remove="Resources\Images\nuevaquiniela.png" />
 	  <None Remove="Resources\Images\sport.png" />
 	  <None Remove="Resources\Images\tablageneral.png" />
+	  <None Remove="Resources\Images\usuario.png" />
 	  <None Remove="Resources\Splash\cubo.svg" />
 	</ItemGroup>
 

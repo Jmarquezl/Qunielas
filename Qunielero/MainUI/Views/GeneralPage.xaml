@@ -8,10 +8,4 @@
         <viewModels:GeneralViewModel/>
     </ContentPage.BindingContext>
     
-    <VerticalStackLayout>
-        <Label 
-            Text="Tabla General"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
 </ContentPage>

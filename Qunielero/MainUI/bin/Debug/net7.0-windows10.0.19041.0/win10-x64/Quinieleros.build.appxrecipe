@@ -712,6 +712,21 @@
     <AppxPackagedFile Include="C:\WorkSpace\Qunielero\MainUI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashbalonSplashScreen.scale-400.png">
       <PackagePath>splashbalonSplashScreen.scale-400.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\WorkSpace\Qunielero\MainUI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashcupSplashScreen.scale-100.png">
+      <PackagePath>splashcupSplashScreen.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\WorkSpace\Qunielero\MainUI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashcupSplashScreen.scale-125.png">
+      <PackagePath>splashcupSplashScreen.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\WorkSpace\Qunielero\MainUI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashcupSplashScreen.scale-150.png">
+      <PackagePath>splashcupSplashScreen.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\WorkSpace\Qunielero\MainUI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashcupSplashScreen.scale-200.png">
+      <PackagePath>splashcupSplashScreen.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\WorkSpace\Qunielero\MainUI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashcupSplashScreen.scale-400.png">
+      <PackagePath>splashcupSplashScreen.scale-400.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\WorkSpace\Qunielero\MainUI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Regular.ttf">
       <PackagePath>OpenSans-Regular.ttf</PackagePath>
     </AppxPackagedFile>
@@ -883,6 +898,15 @@
     <AppxPackagedFile Include="C:\WorkSpace\Qunielero\MainUI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png">
       <PackagePath>dotnet_bot.scale-400.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\WorkSpace\Qunielero\MainUI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\jornada.scale-100.png">
+      <PackagePath>jornada.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\WorkSpace\Qunielero\MainUI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\jornada16.scale-100.png">
+      <PackagePath>jornada16.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\WorkSpace\Qunielero\MainUI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\jornada24.scale-100.png">
+      <PackagePath>jornada24.scale-100.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\WorkSpace\Qunielero\MainUI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\menuhamburguesa.scale-100.png">
       <PackagePath>menuhamburguesa.scale-100.png</PackagePath>
     </AppxPackagedFile>
@@ -897,6 +921,9 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\WorkSpace\Qunielero\MainUI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\tablageneral.scale-100.png">
       <PackagePath>tablageneral.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\WorkSpace\Qunielero\MainUI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\usuario.scale-100.png">
+      <PackagePath>usuario.scale-100.png</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

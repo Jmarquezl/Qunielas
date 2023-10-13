@@ -4,6 +4,7 @@
              x:Class="Quinieleros.Views.HomePage"
              xmlns:viewModels="clr-namespace:Quinieleros.ViewModels"
              Title="Bienvenido">
+    
     <ContentPage.BindingContext>
         <viewModels:HomeViewModel/>
     </ContentPage.BindingContext>
@@ -11,11 +12,58 @@
     <Shell.BackButtonBehavior>
         <BackButtonBehavior IsVisible="False" IsEnabled="True" NavigationPage.HasNavigationBar="True"/>
     </Shell.BackButtonBehavior>
-    
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+
+    <Grid x:Name="grdMain">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <!--<RowDefinition Height="50"/>-->
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!--<Grid x:Name="grdBanner" Grid.Row="0" Background="{StaticResource Tertiary}">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="70"/>
+            </Grid.ColumnDefinitions>
+
+            <Label Grid.Column="0" Text="{Binding JornadaVigente}" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="White" FontAttributes="Bold"/>
+            <Button Grid.Column="1" Margin="10,0,10,0" WidthRequest="65" HeightRequest="30" ImageSource="jornada24.png" HorizontalOptions="End" Command="{Binding GiveAwayCommand}"/>
+        </Grid>-->
+        
+        <CollectionView x:Name="lsRegistros" ItemsSource="{Binding Registros}" Grid.Row="0" Header="Participantes">
+            <CollectionView.ItemsLayout>
+                <LinearItemsLayout Orientation="Vertical" />
+            </CollectionView.ItemsLayout>
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Grid x:Name="grdRegistros" Margin="0,10,15,10">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+                        <Image
+                                Grid.RowSpan="2"
+                                Source="sport.png"
+                                Aspect="AspectFill"
+                                HeightRequest="60"
+                                WidthRequest="60"
+                                />
+                        <Label Text="{Binding Quinielero}" Margin="20,0,0,0" Grid.Column="1" FontSize="Subtitle"/>
+                        <Label Text="{Binding Resumen}" Margin="20,0,0,0" Grid.Column="1" Grid.Row="1" FontSize="Caption"/>
+
+
+                    </Grid>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+        
+    </Grid>
 </ContentPage>

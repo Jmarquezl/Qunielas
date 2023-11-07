@@ -38,6 +38,11 @@
             Icon="nuevaquiniela.png"
             ContentTemplate="{DataTemplate views:BetPage}"
              />
+        <ShellContent
+            Title="Nueva Jornada"
+            Icon="jornada.png"
+            ContentTemplate="{DataTemplate views:JornadaPage}"
+             />
     </FlyoutItem>
 
     <Shell.FlyoutHeaderTemplate>

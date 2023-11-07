@@ -952,6 +952,11 @@ C:\WorkSpace\Qunielero\MainUI\obj\Debug\net7.0-android\resizetizer\r\drawable\us
 C:\WorkSpace\Qunielero\MainUI\obj\Debug\net7.0-android\resizetizer\r\drawable\jornada.png
 C:\WorkSpace\Qunielero\MainUI\obj\Debug\net7.0-android\resizetizer\r\drawable\jornada16.png
 C:\WorkSpace\Qunielero\MainUI\obj\Debug\net7.0-android\resizetizer\r\drawable\jornada24.png
+C:\WorkSpace\Qunielero\MainUI\obj\Debug\net7.0-android\resizetizer\r\drawable-hdpi\splashcup.png
+C:\WorkSpace\Qunielero\MainUI\obj\Debug\net7.0-android\resizetizer\r\drawable-mdpi\splashcup.png
+C:\WorkSpace\Qunielero\MainUI\obj\Debug\net7.0-android\resizetizer\r\drawable-xhdpi\splashcup.png
+C:\WorkSpace\Qunielero\MainUI\obj\Debug\net7.0-android\resizetizer\r\drawable-xxhdpi\splashcup.png
+C:\WorkSpace\Qunielero\MainUI\obj\Debug\net7.0-android\resizetizer\r\drawable-xxxhdpi\splashcup.png
 C:\WorkSpace\Qunielero\MainUI\obj\Debug\net7.0-android\android\assets\mscorlib.dll
 C:\WorkSpace\Qunielero\MainUI\obj\Debug\net7.0-android\android\assets\System.Collections.Concurrent.dll
 C:\WorkSpace\Qunielero\MainUI\obj\Debug\net7.0-android\android\assets\System.Data.Common.dll
@@ -973,11 +978,6 @@ C:\WorkSpace\Qunielero\MainUI\obj\Debug\net7.0-android\android\assets\System.Xml
 C:\WorkSpace\Qunielero\MainUI\obj\Debug\net7.0-android\android\assets\System.Xml.XmlSerializer.dll
 C:\WorkSpace\Qunielero\MainUI\obj\Debug\net7.0-android\android\assets\System.Xml.XPath.dll
 C:\WorkSpace\Qunielero\MainUI\obj\Debug\net7.0-android\android\assets\System.Xml.XPath.XDocument.dll
-C:\WorkSpace\Qunielero\MainUI\obj\Debug\net7.0-android\resizetizer\r\drawable-hdpi\splashcup.png
-C:\WorkSpace\Qunielero\MainUI\obj\Debug\net7.0-android\resizetizer\r\drawable-mdpi\splashcup.png
-C:\WorkSpace\Qunielero\MainUI\obj\Debug\net7.0-android\resizetizer\r\drawable-xhdpi\splashcup.png
-C:\WorkSpace\Qunielero\MainUI\obj\Debug\net7.0-android\resizetizer\r\drawable-xxhdpi\splashcup.png
-C:\WorkSpace\Qunielero\MainUI\obj\Debug\net7.0-android\resizetizer\r\drawable-xxxhdpi\splashcup.png
 C:\WorkSpace\Qunielero\MainUI\obj\Debug\net7.0-android\android\typemaps.arm64-v8a.ll
 C:\WorkSpace\Qunielero\MainUI\obj\Debug\net7.0-android\android\environment.arm64-v8a.ll
 C:\WorkSpace\Qunielero\MainUI\obj\Debug\net7.0-android\android\compressed_assemblies.arm64-v8a.ll

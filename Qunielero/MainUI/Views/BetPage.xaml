@@ -8,11 +8,53 @@
     <ContentPage.BindingContext>
         <viewModels:BetViewModel/>
     </ContentPage.BindingContext>
+
+    <Grid x:Name="grdMain">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="50"/>
+        </Grid.RowDefinitions>
+        <HorizontalStackLayout Grid.Row="0">            
+            <Label Text="Alias" FontAttributes="Bold" VerticalOptions="Center"></Label>
+            <Entry Text="{Binding Alias, Mode=TwoWay}" WidthRequest="300" Margin="20,0,0,0" Placeholder="Alias de la quiniela" MaxLength="12" HeightRequest="50"></Entry>
+        </HorizontalStackLayout>
         
-    <VerticalStackLayout>
-        <Label 
-            Text="Arma tu quiniela"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+        <Grid x:Name="grdQuiniela" Grid.Row="1" BackgroundColor="AliceBlue">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <CollectionView x:Name="lsPartidos" ItemsSource="{Binding Partidos}" Grid.Row="0" Header="Partidos" HorizontalOptions="Center">
+                <CollectionView.ItemsLayout>
+                    <LinearItemsLayout Orientation="Vertical" />
+                </CollectionView.ItemsLayout>
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Grid x:Name="grdPartidos" HorizontalOptions="Center">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="Auto"/>
+                            </Grid.ColumnDefinitions>
+                            
+                            <Entry Text="{Binding Local}" Keyboard="Numeric" Grid.Column="0" Margin="10,-10,0,0" MaxLength="1" HorizontalTextAlignment="Center" VerticalTextAlignment="End"/>
+                            <Label Text="{Binding EquipoLocal}" Grid.Column="1" Margin="10,0,0,0" VerticalOptions="Center"/>
+                            <Label Text="VS" Grid.Column="2" Margin="20,0,20,0" VerticalOptions="Center"/>
+                            <Label Text="{Binding EquipoVisita}" Grid.Column="3" Margin="0,0,10,0" VerticalOptions="Center"/>
+                            <Entry Text="{Binding Visita}" Keyboard="Numeric" Grid.Column="4" MaxLength="1" HorizontalTextAlignment="Center" VerticalTextAlignment="End"/>
+                        </Grid>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </Grid>
+
+        <Button Text="Guardar" Grid.Row="2" Command="{Binding SaveCommand}" FontAttributes="Bold"/>
+    </Grid>
 </ContentPage>

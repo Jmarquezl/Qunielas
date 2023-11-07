@@ -58,6 +58,12 @@ build_metadata.AdditionalFiles.ManifestResourceName = Quinieleros.Views.HomePage
 build_metadata.AdditionalFiles.TargetPath = Views\HomePage.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\HomePage.xaml
 
+[C:/WorkSpace/Qunielero/MainUI/Views/JornadaPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Quinieleros.Views.JornadaPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\JornadaPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\JornadaPage.xaml
+
 [C:/WorkSpace/Qunielero/MainUI/Views/LoginPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Quinieleros.Views.LoginPage.xaml

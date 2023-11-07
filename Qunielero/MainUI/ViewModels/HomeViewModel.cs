@@ -13,22 +13,11 @@ namespace Quinieleros.ViewModels
     public partial class HomeViewModel : ObservableObject, IQueryAttributable
     {
         #region Members
-        private string jornadaVigente;
         #endregion
 
         #region Properties
         [ObservableProperty]
         public ObservableCollection<Quiniela> registros;
-        public string JornadaVigente
-        {
-            get => jornadaVigente;
-            set
-            {
-                if (value == jornadaVigente) return;
-                jornadaVigente = value;
-                OnPropertyChanged(nameof(JornadaVigente));
-            }
-        }
         #endregion
 
         #region Ctor
@@ -37,7 +26,6 @@ namespace Quinieleros.ViewModels
             BetCommand = new Command(NewBet, BetCanExecute);
             GiveAwayCommand = new Command(NewGiveAway, GiveAwayCanExecute);
 
-            JornadaVigente = "Registrar nueva jornada";
             Image image = new Image
             {
                 Source = ImageSource.FromFile("dotnet_bot.png")
@@ -73,14 +61,14 @@ namespace Quinieleros.ViewModels
         }
         private async void NewGiveAway()
         {
-            Task.Run(async () =>
-            {
-                App.Alert.DisplayPrompt("Nueva Jornada", "Nombre:", "Guardar", "Cancelar", (result =>
-                {
-                    //App.Alert.ShowAlert("Result", $"{result}");
-                    JornadaVigente = result;
-                }));
-            });
+            //Task.Run(async () =>
+            //{
+            //    App.Alert.DisplayPrompt("Nueva Jornada", "Nombre:", "Guardar", "Cancelar", (result =>
+            //    {
+            //        //App.Alert.ShowAlert("Result", $"{result}");
+            //        JornadaVigente = result;
+            //    }));
+            //});
         }
         #endregion
 

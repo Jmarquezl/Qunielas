@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Quinieleros.Views.JornadaPage"
+             xmlns:viewModels="clr-namespace:Quinieleros.ViewModels"
+             Title="Nueva Jornada">
+
+    <ContentPage.BindingContext>
+        <viewModels:JornadaViewModel/>
+    </ContentPage.BindingContext>
+
+    <Grid x:Name="grdMain">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="110"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="50"/>
+        </Grid.RowDefinitions>
+        <FlexLayout Grid.Row="0" Wrap="Wrap" JustifyContent="Start" FlowDirection="LeftToRight">
+            <Label Text="Jornada" FontAttributes="Bold" VerticalOptions="Start"></Label>
+            <Entry Text="{Binding Jornada, Mode=TwoWay}" WidthRequest="300" Margin="20,0,0,0" Placeholder="Nombre de la jornada" MaxLength="12"></Entry>
+            <Label Text="Fecha Inicio" FontAttributes="Bold" VerticalOptions="Start"></Label>
+            <DatePicker Date="{Binding Fecha, Mode=TwoWay}" MinimumDate="{Binding FechaMinima}" Margin="10,0,0,0" Format="dd/MM/yyyy"/>
+        </FlexLayout>
+
+        <Grid x:Name="grdJornada" Grid.Row="1" BackgroundColor="AliceBlue">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <CollectionView x:Name="lsPartidos" ItemsSource="{Binding Partidos}" Grid.Row="0" Header="Partidos" HorizontalOptions="Center">
+                <CollectionView.ItemsLayout>
+                    <LinearItemsLayout Orientation="Vertical" />
+                </CollectionView.ItemsLayout>
+
+                <CollectionView.Header>
+                    <Grid ColumnDefinitions="*,*,*,*">
+                        <Label Text="Bonus" Grid.Column="3"/>
+                    </Grid>
+                </CollectionView.Header>
+
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Grid x:Name="grdPartidos" HorizontalOptions="Center">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="Auto"/>
+                            </Grid.ColumnDefinitions>
+
+                            <Label Text="{Binding EquipoLocal}" Grid.Column="0" Margin="0,0,0,0" VerticalOptions="Center"/>
+                            <Label Text="VS" Grid.Column="1" Margin="20,0,20,0" VerticalOptions="Center"/>
+                            <Label Text="{Binding EquipoVisita}" Grid.Column="2" Margin="0,0,0,0" VerticalOptions="Center"/>
+                            <CheckBox IsChecked="{Binding EsBonus, Mode=TwoWay}" Grid.Column="3"/>
+                        </Grid>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </Grid>
+
+        <Button Text="Guardar" Grid.Row="2" Command="{Binding SaveCommand}" FontAttributes="Bold"/>
+    </Grid>
+</ContentPage>

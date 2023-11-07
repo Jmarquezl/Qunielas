@@ -20,7 +20,7 @@
             <Entry Text="{Binding Alias, Mode=TwoWay}" WidthRequest="300" Margin="20,0,0,0" Placeholder="Alias de la quiniela" MaxLength="12" HeightRequest="50"></Entry>
         </HorizontalStackLayout>
         
-        <Grid x:Name="grdQuiniela" Grid.Row="1" BackgroundColor="AliceBlue">
+        <Grid x:Name="grdQuiniela" Grid.Row="1">
             <Grid.RowDefinitions>
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>

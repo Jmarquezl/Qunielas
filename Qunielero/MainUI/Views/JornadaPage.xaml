@@ -13,16 +13,19 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="110"/>
             <RowDefinition Height="*"/>
-            <RowDefinition Height="50"/>
+            <RowDefinition Height="110"/>
         </Grid.RowDefinitions>
         <FlexLayout Grid.Row="0" Wrap="Wrap" JustifyContent="Start" FlowDirection="LeftToRight">
             <Label Text="Jornada" FontAttributes="Bold" VerticalOptions="Start"></Label>
             <Entry Text="{Binding Jornada, Mode=TwoWay}" WidthRequest="300" Margin="20,0,0,0" Placeholder="Nombre de la jornada" MaxLength="12"></Entry>
             <Label Text="Fecha Inicio" FontAttributes="Bold" VerticalOptions="Start"></Label>
-            <DatePicker Date="{Binding Fecha, Mode=TwoWay}" MinimumDate="{Binding FechaMinima}" Margin="10,0,0,0" Format="dd/MM/yyyy"/>
+            <HorizontalStackLayout>
+                <DatePicker Date="{Binding Fecha, Mode=TwoWay}" MinimumDate="{Binding FechaMinima}" Margin="10,0,0,0" Format="dd/MM/yyyy"/>
+                <TimePicker Time="{Binding Hora, Mode=TwoWay}"/>                
+            </HorizontalStackLayout>
         </FlexLayout>
 
-        <Grid x:Name="grdJornada" Grid.Row="1" BackgroundColor="AliceBlue">
+        <Grid x:Name="grdJornada" Grid.Row="1">
             <Grid.RowDefinitions>
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
@@ -61,6 +64,13 @@
             </CollectionView>
         </Grid>
 
-        <Button Text="Guardar" Grid.Row="2" Command="{Binding SaveCommand}" FontAttributes="Bold"/>
+        <Grid x:Name="grdButtons" Grid.Row="2">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="65"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Button HorizontalOptions="End" Grid.Row="0" ImageSource="mas.png" CornerRadius="60" WidthRequest="45" HeightRequest="45" BackgroundColor="{StaticResource Tertiary}" Margin="0,0,10,0"></Button>
+            <Button Text="Guardar" Grid.Row="1" Command="{Binding SaveCommand}" FontAttributes="Bold"/>
+        </Grid>
     </Grid>
 </ContentPage>

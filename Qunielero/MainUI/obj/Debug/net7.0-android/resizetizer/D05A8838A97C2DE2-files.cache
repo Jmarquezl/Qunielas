@@ -1,10 +1,12 @@
-﻿obj\Debug\net7.0-android\resizetizer\r\drawable\ajustes.png
+﻿obj\Debug\net7.0-android\resizetizer\r\drawable\agregar.png
+obj\Debug\net7.0-android\resizetizer\r\drawable\ajustes.png
 obj\Debug\net7.0-android\resizetizer\r\drawable\back.png
 obj\Debug\net7.0-android\resizetizer\r\drawable\balon.png
 obj\Debug\net7.0-android\resizetizer\r\drawable\bets.png
 obj\Debug\net7.0-android\resizetizer\r\drawable\jornada.png
 obj\Debug\net7.0-android\resizetizer\r\drawable\jornada16.png
 obj\Debug\net7.0-android\resizetizer\r\drawable\jornada24.png
+obj\Debug\net7.0-android\resizetizer\r\drawable\mas.png
 obj\Debug\net7.0-android\resizetizer\r\drawable\menuhamburguesa.png
 obj\Debug\net7.0-android\resizetizer\r\drawable\nuevajornada.png
 obj\Debug\net7.0-android\resizetizer\r\drawable\nuevaquiniela.png

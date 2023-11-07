@@ -90,6 +90,7 @@
 
 	<ItemGroup>
 	  <None Remove="Resources\AppIcon\appicon2.svg" />
+	  <None Remove="Resources\Images\agregar.png" />
 	  <None Remove="Resources\Images\ajustes.png" />
 	  <None Remove="Resources\Images\back.png" />
 	  <None Remove="Resources\Images\balon.png" />
@@ -97,6 +98,7 @@
 	  <None Remove="Resources\Images\jornada.png" />
 	  <None Remove="Resources\Images\jornada16.png" />
 	  <None Remove="Resources\Images\jornada24.png" />
+	  <None Remove="Resources\Images\mas.png" />
 	  <None Remove="Resources\Images\menuhamburguesa.png" />
 	  <None Remove="Resources\Images\nuevajornada.png" />
 	  <None Remove="Resources\Images\nuevaquiniela.png" />

@@ -986,3 +986,5 @@ C:\WorkSpace\Qunielero\MainUI\obj\Debug\net7.0-android\android\environment.arm64
 C:\WorkSpace\Qunielero\MainUI\obj\Debug\net7.0-android\android\compressed_assemblies.arm64-v8a.o
 C:\WorkSpace\Qunielero\MainUI\obj\Debug\net7.0-android\android\jni_remap.arm64-v8a.o
 C:\WorkSpace\Qunielero\MainUI\obj\Debug\net7.0-android\app_shared_libraries\arm64-v8a\libxamarin-app.so
+C:\WorkSpace\Qunielero\MainUI\obj\Debug\net7.0-android\resizetizer\r\drawable\agregar.png
+C:\WorkSpace\Qunielero\MainUI\obj\Debug\net7.0-android\resizetizer\r\drawable\mas.png

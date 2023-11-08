@@ -1,5 +1,9 @@
-﻿using CommunityToolkit.Mvvm.ComponentModel;
+﻿using CommunityToolkit.Maui.Core;
+using CommunityToolkit.Maui.Views;
+using CommunityToolkit.Mvvm.ComponentModel;
 using Quinieleros.Models;
+using Quinieleros.ViewModels.PopUps;
+using Quinieleros.Views.PopUps;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -13,6 +17,7 @@ namespace Quinieleros.ViewModels
     {
         #region Members
         private string alias;
+        private readonly IPopupService popupService;
         #endregion
 
         #region Properties
@@ -33,7 +38,10 @@ namespace Quinieleros.ViewModels
         #region Ctor
         public JornadaViewModel()
         {
+            this.popupService = App.popupService;
+
             SaveCommand = new Command(Save, SaveCanExecute);
+            AddCommand = new Command(Add, AddCanExecute);
 
             partidos = new ObservableCollection<Partido>();
             var list = Enumerable.Repeat(new Partido()
@@ -50,18 +58,30 @@ namespace Quinieleros.ViewModels
 
         #region Commands
         public Command SaveCommand { get; private set; }
+        public Command AddCommand { get; private set; }
         #endregion
 
         #region CanExecute
         private bool SaveCanExecute() => true;
+        private bool AddCanExecute() => true;
         #endregion
 
         #region Method
         private void ResetTemplate()
         {
         }
-        private void Save()
+        private async void Save()
         {
+            
+        }
+        private async void Add() 
+        {
+            var partidoVM = new PartidoViewModel();
+            var partidoView = ((Popup)new PartidoPage());
+            partidoView.BindingContext = partidoVM;
+            await Application.Current.MainPage.ShowPopupAsync(partidoView);
+
+            //await Application.Current.MainPage.ShowPopupAsync(new PartidoViewModel());
         }
         #endregion
         public void ApplyQueryAttributes(IDictionary<string, object> query)

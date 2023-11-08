@@ -24,11 +24,6 @@
             Route="HomePage"
              />
         <ShellContent
-            Title="Rank"
-            Icon="bets.png"
-            ContentTemplate="{DataTemplate views:RankPage}"
-             />
-        <ShellContent
             Title="General"
             Icon="tablageneral.png"
             ContentTemplate="{DataTemplate views:GeneralPage}"

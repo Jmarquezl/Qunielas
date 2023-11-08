@@ -26,7 +26,7 @@
                 <Entry Text="{Binding Usuario, Mode=TwoWay}" WidthRequest="300" Margin="0,0,0,0" Placeholder="Introduce tu usuario" MaxLength="12"></Entry>
                 <Label Text="Contraseña:" FontAttributes="Bold" Margin="10,20,0,0"></Label>
                 <Entry Text="{Binding Contrasenia, Mode=TwoWay}" WidthRequest="300" Margin="0,0,0,0" Placeholder="Introduce tu contraseña" IsPassword="True" MaxLength="16"></Entry>                
-                <Button x:Name="btnLogin" Text="Login" WidthRequest="200" Margin="-30,60,0,0" Command="{Binding LoginCommand}"></Button>
+                <Button x:Name="btnLogin" Text="Login" WidthRequest="200" Margin="-30,60,0,0" Command="{Binding LoginCommand}" FontAttributes="Bold"></Button>
             </VerticalStackLayout>
         </Frame>
     </Grid>

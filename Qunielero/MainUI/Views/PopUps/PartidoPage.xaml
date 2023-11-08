@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<toolkit:Popup
+             xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             Color="White"
+             x:Class="Quinieleros.Views.PopUps.PartidoPage">
+  
+    <Frame CornerRadius="0">
+        <VerticalStackLayout MinimumHeightRequest="200" MinimumWidthRequest="200">
+            <Label Text="Nuevo Partido" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+            <Label Text="Local:" FontAttributes="Bold"/>
+            <Entry Text="{Binding EquipoLocal}" Grid.Row="2"/>
+            <Label Text="Visita:" FontAttributes="Bold"/>
+            <Entry Text="{Binding EquipoVisita}"/>
+            <Button Text="Agregar" Command="{Binding AddCommand}" Margin="0,30,0,0"/>
+        </VerticalStackLayout>
+    </Frame>
+</toolkit:Popup>

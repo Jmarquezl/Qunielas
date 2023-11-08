@@ -74,6 +74,12 @@ build_metadata.AdditionalFiles.ManifestResourceName = Quinieleros.Views.LoginPag
 build_metadata.AdditionalFiles.TargetPath = Views\LoginPage.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\LoginPage.xaml
 
+[C:/WorkSpace/Qunielero/MainUI/Views/PopUps/PartidoPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Quinieleros.Views.PopUps.PartidoPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\PopUps\PartidoPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\PopUps\PartidoPage.xaml
+
 [C:/WorkSpace/Qunielero/MainUI/Views/RankPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Quinieleros.Views.RankPage.xaml

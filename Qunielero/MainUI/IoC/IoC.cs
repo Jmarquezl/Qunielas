@@ -1,4 +1,6 @@
-﻿using Quinieleros.Utils;
+﻿using CommunityToolkit.Maui;
+using CommunityToolkit.Maui.Core;
+using Quinieleros.Utils;
 using Quinieleros.ViewModels;
 using Quinieleros.Views;
 using System;
@@ -14,12 +16,14 @@ namespace Quinieleros.IoC
         public static void AddDependencies(this IServiceCollection service) 
         {
             service.AddTransient<IAlertService, AlertService>();
+
             //Views
             service.AddSingleton<HomePage>();
             service.AddSingleton<BetPage>();
             service.AddSingleton<GeneralPage>();
             service.AddSingleton<LoginPage>();
             service.AddSingleton<RankPage>();
+            service.AddSingleton<JornadaPage>();
 
             //ViewModels
             service.AddSingleton<HomeViewModel>();
@@ -27,6 +31,7 @@ namespace Quinieleros.IoC
             service.AddSingleton<GeneralViewModel>();
             service.AddSingleton<LoginViewModel>();
             service.AddSingleton<RankViewModel>();
+            service.AddSingleton<JornadaViewModel>();
         }
     }
 }

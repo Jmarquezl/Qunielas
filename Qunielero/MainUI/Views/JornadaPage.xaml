@@ -33,7 +33,7 @@
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
 
-            <CollectionView x:Name="lsPartidos" ItemsSource="{Binding Partidos}" Grid.Row="0" Header="Partidos" HorizontalOptions="Center">
+            <CollectionView x:Name="lsPartidos" ItemsSource="{Binding Partidos}" Grid.Row="0" HorizontalOptions="Center">
                 <CollectionView.ItemsLayout>
                     <LinearItemsLayout Orientation="Vertical" />
                 </CollectionView.ItemsLayout>
@@ -69,7 +69,7 @@
                 <RowDefinition Height="65"/>
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
-            <Button HorizontalOptions="End" Grid.Row="0" ImageSource="mas.png" CornerRadius="60" WidthRequest="45" HeightRequest="45" BackgroundColor="{StaticResource Tertiary}" Margin="0,0,10,0"></Button>
+            <Button HorizontalOptions="End" Command="{Binding AddCommand}" Grid.Row="0" ImageSource="mas.png" CornerRadius="60" WidthRequest="45" HeightRequest="45" BackgroundColor="{StaticResource Tertiary}" Margin="0,0,10,0"></Button>
             <Button Text="Guardar" Grid.Row="1" Command="{Binding SaveCommand}" FontAttributes="Bold"/>
         </Grid>
     </Grid>

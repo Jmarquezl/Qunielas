@@ -9,11 +9,11 @@
     <Frame CornerRadius="0">
         <VerticalStackLayout MinimumHeightRequest="200" MinimumWidthRequest="200">
             <Label Text="Nuevo Partido" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
-            <Label Text="Local:" FontAttributes="Bold"/>
+            <Label Text="Local:" FontAttributes="Bold" Padding="10"/>
             <Entry Text="{Binding EquipoLocal}" Grid.Row="2"/>
             <Label Text="Visita:" FontAttributes="Bold"/>
             <Entry Text="{Binding EquipoVisita}"/>
-            <Button Text="Agregar" Command="{Binding AddCommand}" Margin="0,30,0,0"/>
+            <Button Text="Agregar" Command="{Binding AddCommand}" Margin="0,20,0,0"/>
         </VerticalStackLayout>
     </Frame>
 </toolkit:Popup>

@@ -1,5 +1,6 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
+using Quinieleros.Models;
 using Quinieleros.Views;
 using System;
 using System.Collections.Generic;
@@ -70,6 +71,7 @@ namespace Quinieleros.ViewModels
         }
         private void Login() 
         {
+            Session.SetSession("{\"idUsuario\":19, \"usuario\":\"julio cesar\", \"administrador\":true,\"equipos\":[{\"id\":1,\"nombre\":\"Manchester\"}, {\"id\":2,\"nombre\":\"Feyenord\"}, {\"id\":3,\"nombre\":\"Jaguares\"}]}");
             Shell.Current.GoToAsync($"//{nameof(HomePage)}");
         }
         #endregion

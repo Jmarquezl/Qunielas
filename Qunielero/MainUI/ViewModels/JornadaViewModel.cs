@@ -1,6 +1,7 @@
 ﻿using CommunityToolkit.Maui.Core;
 using CommunityToolkit.Maui.Views;
 using CommunityToolkit.Mvvm.ComponentModel;
+using Microsoft.Maui.Controls.Xaml;
 using Quinieleros.Models;
 using Quinieleros.ViewModels.PopUps;
 using Quinieleros.Views.PopUps;
@@ -18,6 +19,7 @@ namespace Quinieleros.ViewModels
         #region Members
         private string alias;
         private readonly IPopupService popupService;
+        private Popup partidoView;
         #endregion
 
         #region Properties
@@ -48,7 +50,7 @@ namespace Quinieleros.ViewModels
             {
                 EquipoLocal = "Equipo Local",
                 EquipoVisita = "Equipo Visita",
-            }, 8).ToList();
+            }, 3).ToList();
             foreach (var item in list)
                 partidos.Add(item);
 
@@ -77,11 +79,15 @@ namespace Quinieleros.ViewModels
         private async void Add() 
         {
             var partidoVM = new PartidoViewModel();
-            var partidoView = ((Popup)new PartidoPage());
+            partidoVM.OnResult = (o) => PartidoNuevo(o);
+            partidoView = ((Popup)new PartidoPage());
             partidoView.BindingContext = partidoVM;
             await Application.Current.MainPage.ShowPopupAsync(partidoView);
-
-            //await Application.Current.MainPage.ShowPopupAsync(new PartidoViewModel());
+        }
+        private async void PartidoNuevo(Partido partido) 
+        {
+            partidos.Add(partido);
+            await partidoView.CloseAsync();
         }
         #endregion
         public void ApplyQueryAttributes(IDictionary<string, object> query)

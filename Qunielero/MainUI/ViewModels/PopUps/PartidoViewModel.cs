@@ -1,4 +1,10 @@
-﻿using CommunityToolkit.Mvvm.ComponentModel;
+﻿using CommunityToolkit.Maui.Alerts;
+using CommunityToolkit.Maui.Core;
+using CommunityToolkit.Maui.Views;
+using CommunityToolkit.Mvvm.ComponentModel;
+using Quinieleros.Models;
+using Quinieleros.Views;
+using Quinieleros.Views.PopUps;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,6 +18,7 @@ namespace Quinieleros.ViewModels.PopUps
         #region Members
         private string equipoLocal;
         private string equipoVisita;
+        private readonly IPopupService popupService;        
         #endregion
 
         #region Properties
@@ -35,12 +42,14 @@ namespace Quinieleros.ViewModels.PopUps
                 OnPropertyChanged(nameof(EquipoVisita));
             }
         }
+        public Action<Partido> OnResult{ get; set; }
         #endregion
 
         #region Ctor
         public PartidoViewModel()
         {
             AddCommand = new Command(AddPartido, AddCanExecute);
+            this.popupService = App.popupService;
         }
         #endregion
 
@@ -53,9 +62,9 @@ namespace Quinieleros.ViewModels.PopUps
         #endregion
 
         #region Methods
-        public void AddPartido() 
+        public async void AddPartido() 
         {
-            
+            OnResult.Invoke(new Partido() { EquipoLocal = equipoLocal, EquipoVisita = equipoVisita});
         }
         #endregion
 

@@ -71,7 +71,10 @@ namespace Quinieleros.ViewModels
         }
         private void Login() 
         {
-            Session.SetSession("{\"idUsuario\":19, \"usuario\":\"julio cesar\", \"administrador\":true,\"equipos\":[{\"id\":1,\"nombre\":\"Manchester\"}, {\"id\":2,\"nombre\":\"Feyenord\"}, {\"id\":3,\"nombre\":\"Jaguares\"}]}");
+            Session.SetSession("{\"idUsuario\":19, \"usuario\":\"juls\", \"nombre\":\"Julio César\", \"administrador\":true,\"equipos\":[{\"id\":1,\"nombre\":\"America\"}, {\"id\":2,\"nombre\":\"Atlas\"}, {\"id\":3,\"nombre\":\"Atlético San Luis\"}," +
+                "{\"id\":4,\"nombre\":\"Club Tijuana\"}, {\"id\":5,\"nombre\":\"Cruz Azul\"}, {\"id\":6,\"nombre\":\"FC Juárez\"}, {\"id\":7,\"nombre\":\"Guadalajara\"}, {\"id\":8,\"nombre\":\"León\"}, " +
+                "{\"id\":9,\"nombre\":\"Mazatlán FC\"}, {\"id\":10,\"nombre\":\"Monterrey\"}, {\"id\":11,\"nombre\":\"Necaxa\"}, {\"id\":12,\"nombre\":\"Pachuca\"}]," +
+                " \"torneo\": {\"id\": 1,\"nombre\": \"clausura\"},  \"grupo\": {\"id\": 1,\"nombre\": \"Ponieleros\"}}");
             Shell.Current.GoToAsync($"//{nameof(HomePage)}");
         }
         #endregion

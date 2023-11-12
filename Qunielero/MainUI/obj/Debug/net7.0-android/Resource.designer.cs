@@ -20758,31 +20758,28 @@ namespace Quinieleros
 			public const int nuevaquiniela = 2131165348;
 			
 			// aapt resource value: 0x7F0700A5
-			public const int splashbalon = 2131165349;
+			public const int splashcup = 2131165349;
 			
 			// aapt resource value: 0x7F0700A6
-			public const int splashcup = 2131165350;
+			public const int sport = 2131165350;
 			
 			// aapt resource value: 0x7F0700A7
-			public const int sport = 2131165351;
+			public const int tablageneral = 2131165351;
 			
 			// aapt resource value: 0x7F0700A8
-			public const int tablageneral = 2131165352;
+			public const int test_custom_background = 2131165352;
 			
 			// aapt resource value: 0x7F0700A9
-			public const int test_custom_background = 2131165353;
+			public const int test_level_drawable = 2131165353;
 			
 			// aapt resource value: 0x7F0700AA
-			public const int test_level_drawable = 2131165354;
+			public const int tooltip_frame_dark = 2131165354;
 			
 			// aapt resource value: 0x7F0700AB
-			public const int tooltip_frame_dark = 2131165355;
+			public const int tooltip_frame_light = 2131165355;
 			
 			// aapt resource value: 0x7F0700AC
-			public const int tooltip_frame_light = 2131165356;
-			
-			// aapt resource value: 0x7F0700AD
-			public const int usuario = 2131165357;
+			public const int usuario = 2131165356;
 			
 			static Drawable()
 			{

@@ -24,14 +24,14 @@
             Route="HomePage"
              />
         <ShellContent
-            Title="General"
-            Icon="tablageneral.png"
-            ContentTemplate="{DataTemplate views:GeneralPage}"
-             />
-        <ShellContent
             Title="Nueva Quiniela"
             Icon="nuevaquiniela.png"
             ContentTemplate="{DataTemplate views:BetPage}"
+             />
+        <ShellContent
+            Title="General"
+            Icon="tablageneral.png"
+            ContentTemplate="{DataTemplate views:GeneralPage}"
              />
         <ShellContent
             Title="Nueva Jornada"

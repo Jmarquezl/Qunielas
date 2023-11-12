@@ -17,7 +17,10 @@ namespace Quinieleros.ViewModels
     public partial class JornadaViewModel : ObservableObject, IQueryAttributable
     {
         #region Members
-        private string alias;
+        private string jornada;
+        private DateTime fecha;
+        private DateTime fechaMinima;
+        private TimeSpan hora;
         private readonly IPopupService popupService;
         private Popup partidoView;
         #endregion
@@ -25,14 +28,48 @@ namespace Quinieleros.ViewModels
         #region Properties
         [ObservableProperty]
         public ObservableCollection<Partido> partidos;
-        public string Alias
+        public string Jornada
         {
-            get => alias;
+            get => jornada;
             set
             {
-                if (value == alias) return;
-                alias = value;
-                OnPropertyChanged(nameof(Alias));
+                if (value == jornada) return;
+                jornada = value;
+                OnPropertyChanged(nameof(Jornada));
+                SaveCommand.ChangeCanExecute();
+            }
+        }
+        public DateTime Fecha
+        {
+            get => fecha;
+            set
+            {
+                if (value == fecha) return;
+                fecha = value;
+                OnPropertyChanged(nameof(Fecha));
+                SaveCommand.ChangeCanExecute();
+            }
+        }
+        public DateTime FechaMinima
+        {
+            get => fechaMinima;
+            set
+            {
+                if (value == fechaMinima) return;
+                fechaMinima = value;
+                OnPropertyChanged(nameof(FechaMinima));
+                SaveCommand.ChangeCanExecute();
+            }
+        }
+        public TimeSpan Hora
+        {
+            get => hora;
+            set
+            {
+                if (value == hora) return;
+                hora = value;
+                OnPropertyChanged(nameof(Hora));
+                SaveCommand.ChangeCanExecute();
             }
         }
         #endregion
@@ -41,19 +78,9 @@ namespace Quinieleros.ViewModels
         public JornadaViewModel()
         {
             this.popupService = App.popupService;
-
+            partidos = new ObservableCollection<Partido>();
             SaveCommand = new Command(Save, SaveCanExecute);
             AddCommand = new Command(Add, AddCanExecute);
-
-            partidos = new ObservableCollection<Partido>();
-            var list = Enumerable.Repeat(new Partido()
-            {
-                EquipoLocal = "Equipo Local",
-                EquipoVisita = "Equipo Visita",
-            }, 3).ToList();
-            foreach (var item in list)
-                partidos.Add(item);
-
             ResetTemplate();
         }
         #endregion
@@ -64,13 +91,17 @@ namespace Quinieleros.ViewModels
         #endregion
 
         #region CanExecute
-        private bool SaveCanExecute() => true;
+        private bool SaveCanExecute() => Session.ConfiguracionCompleta && Partidos.Any();
         private bool AddCanExecute() => true;
         #endregion
 
         #region Method
         private void ResetTemplate()
         {
+            Fecha = DateTime.Today;
+            FechaMinima = DateTime.Today;
+            Hora = TimeSpan.FromHours(17);
+            Jornada = string.Empty;
         }
         private async void Save()
         {
@@ -88,6 +119,7 @@ namespace Quinieleros.ViewModels
         {
             partidos.Add(partido);
             await partidoView.CloseAsync();
+            SaveCommand.ChangeCanExecute();
         }
         #endregion
         public void ApplyQueryAttributes(IDictionary<string, object> query)

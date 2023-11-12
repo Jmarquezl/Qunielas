@@ -21,6 +21,7 @@ namespace Quinieleros.Models
         private static List<EquipoPOCO> equipos;
         public static int IdUsuario => idUsuario;
         public static string Usuario => usuario;
+        public static string Nombre => nombre;
         public static bool Administrador => administrador;
         public static bool QuinielaActiva => quinielaActiva;
         public static List<EquipoPOCO> GetEquipos() => equipos.OrderBy(e => e.Nombre).ToList();
@@ -42,6 +43,8 @@ namespace Quinieleros.Models
             equipos = session.Equipos;
             grupo = session.Grupo;
             torneo = session.Torneo;
+
+            Preferences.Set("usuario", session.Usuario);
         }
     }
 }

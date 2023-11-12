@@ -117,7 +117,7 @@ namespace Quinieleros.ViewModels
         }
         private async void PartidoNuevo(Partido partido) 
         {
-            partidos.Add(partido);
+            Partidos.Add(partido);
             await partidoView.CloseAsync();
             SaveCommand.ChangeCanExecute();
         }

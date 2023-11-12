@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<StackLayout xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Quinieleros.Views.FlyoutHeaderControl">
+    <VerticalStackLayout >
+        <Grid BackgroundColor="{StaticResource Secondary}"
+                  HeightRequest="130">
+            <Image Aspect="Center"
+                       Source="usuario.png"
+                       Opacity="0.5" />
+            <Label x:Name="lblQuinielero"
+                       TextColor="White"
+                       FontAttributes="Bold"
+                       HorizontalTextAlignment="Center"
+                       VerticalTextAlignment="End" 
+                        Padding="10"/>
+        </Grid>
+    </VerticalStackLayout>
+</StackLayout>

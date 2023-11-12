@@ -50,6 +50,12 @@ build_metadata.AdditionalFiles.ManifestResourceName = Quinieleros.Views.BetPage.
 build_metadata.AdditionalFiles.TargetPath = Views\BetPage.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\BetPage.xaml
 
+[C:/WorkSpace/Qunielero/MainUI/Views/FlyoutHeaderControl.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Quinieleros.Views.FlyoutHeaderControl.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\FlyoutHeaderControl.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\FlyoutHeaderControl.xaml
+
 [C:/WorkSpace/Qunielero/MainUI/Views/GeneralPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Quinieleros.Views.GeneralPage.xaml

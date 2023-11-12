@@ -18,20 +18,20 @@ namespace Quinieleros.IoC
             service.AddTransient<IAlertService, AlertService>();
 
             //Views
-            service.AddSingleton<HomePage>();
-            service.AddSingleton<BetPage>();
-            service.AddSingleton<GeneralPage>();
+            service.AddTransient<HomePage>();
+            service.AddTransient<BetPage>();
+            service.AddTransient<GeneralPage>();
             service.AddSingleton<LoginPage>();
-            service.AddSingleton<RankPage>();
-            service.AddSingleton<JornadaPage>();
+            service.AddTransient<RankPage>();
+            service.AddTransient<JornadaPage>();
 
             //ViewModels
-            service.AddSingleton<HomeViewModel>();
-            service.AddSingleton<BetViewModel>();
-            service.AddSingleton<GeneralViewModel>();
+            service.AddTransient<HomeViewModel>();
+            service.AddTransient<BetViewModel>();
+            service.AddTransient<GeneralViewModel>();
             service.AddSingleton<LoginViewModel>();
-            service.AddSingleton<RankViewModel>();
-            service.AddSingleton<JornadaViewModel>();
+            service.AddTransient<RankViewModel>();
+            service.AddTransient<JornadaViewModel>();
         }
     }
 }

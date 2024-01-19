@@ -11,23 +11,23 @@ namespace Quinieleros.Models
 {
     public static class Session
     {
-        private static int idUsuario;
+        private static string idUsuario;
         private static string usuario;
-        private static string nombre;
+        private static string nombreCompleto;
         private static bool administrador;
         private static bool quinielaActiva;
         private static GrupoPOCO grupo;
         private static TorneoPOCO torneo;
         private static List<EquipoPOCO> equipos;
-        public static int IdUsuario => idUsuario;
+        public static string IdUsuario => idUsuario;
         public static string Usuario => usuario;
-        public static string Nombre => nombre;
+        public static string NombreCompleto => nombreCompleto;
         public static bool Administrador => administrador;
         public static bool QuinielaActiva => quinielaActiva;
         public static List<EquipoPOCO> GetEquipos() => equipos.OrderBy(e => e.Nombre).ToList();
         public static GrupoPOCO Grupo => grupo;
         public static TorneoPOCO Torneo => torneo;
-        public static bool ConfiguracionCompleta => grupo?.Id > 0 && torneo?.Id > 0;
+        public static bool ConfiguracionCompleta => !string.IsNullOrEmpty(grupo?.Id) && !string.IsNullOrEmpty(torneo?.Id);
         static Session()
         {
 
@@ -35,9 +35,9 @@ namespace Quinieleros.Models
         public static void SetSession(string jsonSession) 
         {
             SessionPOCO session = JsonConvert.DeserializeObject<SessionPOCO>(jsonSession);
-            idUsuario = session.IdUsuario;
+            idUsuario = session.Id;
             usuario = session.Usuario;
-            nombre = session.Nombre;
+            nombreCompleto = $"{session.Nombre} {session.Paterno} {session.Materno}";
             administrador = session.Administrador;
             quinielaActiva = session.QuinielaActiva;
             equipos = session.Equipos;

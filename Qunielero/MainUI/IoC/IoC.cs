@@ -16,6 +16,7 @@ namespace Quinieleros.IoC
         public static void AddDependencies(this IServiceCollection service) 
         {
             service.AddTransient<IAlertService, AlertService>();
+            service.AddTransient<IRestClient, RestClient>();
 
             //Views
             service.AddTransient<HomePage>();

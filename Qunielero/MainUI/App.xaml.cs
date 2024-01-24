@@ -8,6 +8,7 @@ namespace Quinieleros
         public static IServiceProvider Services;
         public static IAlertService Alert;
         public static IPopupService popupService;
+        public static IRestClient restClient;
         public App(IServiceProvider provider)
         {
             InitializeComponent();
@@ -15,6 +16,7 @@ namespace Quinieleros
             Services = provider;
             Alert = Services.GetService<IAlertService>();
             popupService = Services.GetService<IPopupService>();
+            restClient = Services.GetService<IRestClient>();
             MainPage = new AppShell();
         }
     }

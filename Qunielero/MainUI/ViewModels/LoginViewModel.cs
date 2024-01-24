@@ -1,6 +1,9 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
+using Newtonsoft.Json;
 using Quinieleros.Models;
+using Quinieleros.Models.POCO;
+using Quinieleros.Utils;
 using Quinieleros.Views;
 using System;
 using System.Collections.Generic;
@@ -18,6 +21,7 @@ namespace Quinieleros.ViewModels
         #region Members
         private string usuario;
         private string contrasenia;
+        private IRestClient restClient;
         #endregion
 
         #region Properties
@@ -48,10 +52,11 @@ namespace Quinieleros.ViewModels
         #region Ctor
         public LoginViewModel()
         {
+            restClient = App.restClient;
             LoginCommand = new Command(Login, LoginCanExecute);
             ResetTemplate();
-            Usuario = "Julio";
-            Contrasenia = "Julio";
+            Usuario = "jmarquez";
+            Contrasenia = "julio";
         }
         #endregion
 
@@ -71,13 +76,15 @@ namespace Quinieleros.ViewModels
         }
         private void Login() 
         {
-            Session.SetSession("{\"idUsuario\":19, \"usuario\":\"juls\", \"nombre\":\"Julio César\", \"administrador\":true,\"equipos\":[{\"id\":1,\"nombre\":\"America\"}, {\"id\":2,\"nombre\":\"Atlas\"}, {\"id\":3,\"nombre\":\"Atlético San Luis\"}," +
-                "{\"id\":4,\"nombre\":\"Club Tijuana\"}, {\"id\":5,\"nombre\":\"Cruz Azul\"}, {\"id\":6,\"nombre\":\"FC Juárez\"}, {\"id\":7,\"nombre\":\"Guadalajara\"}, {\"id\":8,\"nombre\":\"León\"}, " +
-                "{\"id\":9,\"nombre\":\"Mazatlán FC\"}, {\"id\":10,\"nombre\":\"Monterrey\"}, {\"id\":11,\"nombre\":\"Necaxa\"}, {\"id\":12,\"nombre\":\"Pachuca\"}]," +
-                " \"torneo\": {\"id\": 1,\"nombre\": \"clausura\"},  \"grupo\": {\"id\": 1,\"nombre\": \"Ponieleros\"}}");
-            
-            AppShell.Current.FlyoutHeader = new FlyoutHeaderControl();
-            Shell.Current.GoToAsync($"//{nameof(HomePage)}");
+            SessionPOCO session = JsonConvert.DeserializeObject<SessionPOCO>(restClient.Logine(Usuario, Contrasenia).Result);
+            if (session.Code.Equals(CodeError.SUCCESS))
+            {
+                Session.SetSession(session);
+                AppShell.Current.FlyoutHeader = new FlyoutHeaderControl();
+                Shell.Current.GoToAsync($"//{nameof(HomePage)}");
+            }
+            else
+                App.Alert.ShowAlert("Quinieleros", "Loging failed");
         }
         #endregion
         public void ApplyQueryAttributes(IDictionary<string, object> query)

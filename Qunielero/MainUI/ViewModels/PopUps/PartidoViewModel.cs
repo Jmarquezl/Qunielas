@@ -63,7 +63,7 @@ namespace Quinieleros.ViewModels.PopUps
         #endregion
 
         #region CanExecute
-        private bool AddCanExecute() => selectedEquipoLocal?.Id > 0 && selectedEquipoVisita?.Id > 0;
+        private bool AddCanExecute() => !string.IsNullOrEmpty(selectedEquipoLocal?.Id) && !string.IsNullOrEmpty(selectedEquipoVisita?.Id);
         #endregion
 
         #region Commands

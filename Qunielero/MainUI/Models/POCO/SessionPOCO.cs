@@ -10,12 +10,18 @@ namespace Quinieleros.Models.POCO
 {
     public class SessionPOCO
     {
+        [JsonProperty("code")]
+        public string Code { get; set; }
+        [JsonProperty("message")]
+        public string Message { get; set; }
         [JsonProperty("id")]
         public string Id { get; set; }
         [JsonProperty("grupo")]
         public GrupoPOCO Grupo { get; set; }
         [JsonProperty("torneo")]
         public TorneoPOCO Torneo { get; set; }
+        [JsonProperty("jornada")]
+        public JornadaPOCO Jornada { get; set; }
         [JsonProperty("usuario")]
         public string Usuario{ get; set; }
         [JsonProperty("nombre")]
@@ -34,7 +40,7 @@ namespace Quinieleros.Models.POCO
     public class EquipoPOCO 
     {
         [JsonProperty("id")]
-        public int Id { get; set; }
+        public string Id { get; set; }
         [JsonProperty("nombre")]
         public string Nombre { get; set; }
     }

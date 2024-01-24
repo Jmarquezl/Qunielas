@@ -89,6 +89,8 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Remove="appsetting.release.json" />
+	  <None Remove="appsettings.debug.json" />
 	  <None Remove="Resources\AppIcon\appicon2.svg" />
 	  <None Remove="Resources\Images\agregar.png" />
 	  <None Remove="Resources\Images\ajustes.png" />
@@ -111,8 +113,19 @@
 	<ItemGroup>
 		<PackageReference Include="CommunityToolkit.Maui" Version="6.1.0" />
 		<PackageReference Include="CommunityToolkit.Mvvm" Version="8.2.1" />
+		<PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="7.0.4" />
+		<PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="7.0.0" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="7.0.0" />
 		<PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <EmbeddedResource Include="appsetting.release.json">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </EmbeddedResource>
+	  <EmbeddedResource Include="appsettings.debug.json">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </EmbeddedResource>
 	</ItemGroup>
 
 	<ItemGroup>
@@ -158,6 +171,10 @@
 	  <MauiXaml Update="Views\RankPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Folder Include="Resources\xml\" />
 	</ItemGroup>
 
 </Project>

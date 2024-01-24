@@ -962,6 +962,14 @@ C:\WorkSpace\Qunielero\MainUI\obj\Debug\net7.0-android\lp\151\jl\files.cache
 C:\WorkSpace\Qunielero\MainUI\obj\Debug\net7.0-android\lp\156\jl\files.cache
 C:\WorkSpace\Qunielero\MainUI\obj\Debug\net7.0-android\lp\157\jl\files.cache
 C:\WorkSpace\Qunielero\MainUI\obj\Debug\net7.0-android\lp\158\jl\files.cache
+C:\WorkSpace\Qunielero\MainUI\bin\Debug\net7.0-android\appsetting.release.json
+C:\WorkSpace\Qunielero\MainUI\bin\Debug\net7.0-android\appsettings.debug.json
+C:\WorkSpace\Qunielero\MainUI\obj\Debug\net7.0-android\android\assets\Microsoft.Extensions.Configuration.Binder.dll
+C:\WorkSpace\Qunielero\MainUI\obj\Debug\net7.0-android\android\assets\Microsoft.Extensions.Configuration.FileExtensions.dll
+C:\WorkSpace\Qunielero\MainUI\obj\Debug\net7.0-android\android\assets\Microsoft.Extensions.Configuration.Json.dll
+C:\WorkSpace\Qunielero\MainUI\obj\Debug\net7.0-android\android\assets\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\WorkSpace\Qunielero\MainUI\obj\Debug\net7.0-android\android\assets\Microsoft.Extensions.FileProviders.Physical.dll
+C:\WorkSpace\Qunielero\MainUI\obj\Debug\net7.0-android\android\assets\Microsoft.Extensions.FileSystemGlobbing.dll
 C:\WorkSpace\Qunielero\MainUI\obj\Debug\net7.0-android\android\assets\mscorlib.dll
 C:\WorkSpace\Qunielero\MainUI\obj\Debug\net7.0-android\android\assets\System.Collections.Concurrent.dll
 C:\WorkSpace\Qunielero\MainUI\obj\Debug\net7.0-android\android\assets\System.Data.Common.dll
@@ -983,6 +991,7 @@ C:\WorkSpace\Qunielero\MainUI\obj\Debug\net7.0-android\android\assets\System.Xml
 C:\WorkSpace\Qunielero\MainUI\obj\Debug\net7.0-android\android\assets\System.Xml.XmlSerializer.dll
 C:\WorkSpace\Qunielero\MainUI\obj\Debug\net7.0-android\android\assets\System.Xml.XPath.dll
 C:\WorkSpace\Qunielero\MainUI\obj\Debug\net7.0-android\android\assets\System.Xml.XPath.XDocument.dll
+C:\WorkSpace\Qunielero\MainUI\obj\Debug\net7.0-android\res\xml\network_security_config.xml
 C:\WorkSpace\Qunielero\MainUI\obj\Debug\net7.0-android\android\typemaps.arm64-v8a.ll
 C:\WorkSpace\Qunielero\MainUI\obj\Debug\net7.0-android\android\environment.arm64-v8a.ll
 C:\WorkSpace\Qunielero\MainUI\obj\Debug\net7.0-android\android\compressed_assemblies.arm64-v8a.ll

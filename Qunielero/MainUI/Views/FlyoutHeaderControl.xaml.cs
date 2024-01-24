@@ -7,6 +7,6 @@ public partial class FlyoutHeaderControl : StackLayout
 	public FlyoutHeaderControl()
 	{
 		InitializeComponent();
-		lblQuinielero.Text = Session.Nombre;
+		lblQuinielero.Text = Session.NombreCompleto;
 	}
 }

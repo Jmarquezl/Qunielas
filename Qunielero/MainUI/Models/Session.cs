@@ -43,7 +43,12 @@ namespace Quinieleros.Models
             torneo = session.Torneo;
             jornada = session.Jornada;
 
-            Preferences.Set("usuario", session.Usuario);
+            Preferences.Set("token", session.Token);
+            Preferences.Set("idGrupo", session.Grupo.Id);
+        }
+        public static void SetJornadaActiva(JornadaPOCO jornadaActiva) 
+        {
+            jornada = jornadaActiva;
         }
     }
 }

@@ -77,14 +77,16 @@ namespace Quinieleros.ViewModels
         private void Login() 
         {
             SessionPOCO session = JsonConvert.DeserializeObject<SessionPOCO>(restClient.Logine(Usuario, Contrasenia).Result);
-            if (session.Code.Equals(CodeError.SUCCESS))
+            if(session == null)
+                App.Alert.ShowAlert("Quinieleros", $"Error de comunicación.");
+            else if (session.Code.Equals(CodeStatus.LOGIN_OK))
             {
                 Session.SetSession(session);
                 AppShell.Current.FlyoutHeader = new FlyoutHeaderControl();
                 Shell.Current.GoToAsync($"//{nameof(HomePage)}");
             }
             else
-                App.Alert.ShowAlert("Quinieleros", "Loging failed");
+                App.Alert.ShowAlert("Quinieleros", $"{session.Message} {session.Folio}");
         }
         #endregion
         public void ApplyQueryAttributes(IDictionary<string, object> query)

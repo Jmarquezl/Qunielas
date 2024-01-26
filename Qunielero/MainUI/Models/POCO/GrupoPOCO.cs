@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Quinieleros.Models.POCO
 {
-    public class GrupoPOCO
+    public class GrupoPOCO : BasePOCO
     {
         [JsonProperty("id")]
         public string Id { get; set; }

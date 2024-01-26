@@ -2,7 +2,10 @@
 using CommunityToolkit.Maui.Views;
 using CommunityToolkit.Mvvm.ComponentModel;
 using Microsoft.Maui.Controls.Xaml;
+using Newtonsoft.Json;
 using Quinieleros.Models;
+using Quinieleros.Models.POCO;
+using Quinieleros.Utils;
 using Quinieleros.ViewModels.PopUps;
 using Quinieleros.Views.PopUps;
 using System;
@@ -82,6 +85,7 @@ namespace Quinieleros.ViewModels
             SaveCommand = new Command(Save, SaveCanExecute);
             AddCommand = new Command(Add, AddCanExecute);
             ResetTemplate();
+            ConsultarJornada();
         }
         #endregion
 
@@ -91,8 +95,8 @@ namespace Quinieleros.ViewModels
         #endregion
 
         #region CanExecute
-        private bool SaveCanExecute() => Session.ConfiguracionCompleta && Partidos.Any();
-        private bool AddCanExecute() => true;
+        private bool SaveCanExecute() => string.IsNullOrEmpty(Session.Jornada?.Id) && Partidos.Any();
+        private bool AddCanExecute() => string.IsNullOrEmpty(Session.Jornada?.Id);
         #endregion
 
         #region Method
@@ -105,7 +109,15 @@ namespace Quinieleros.ViewModels
         }
         private async void Save()
         {
-            
+            JornadaPOCO jornada = JsonConvert.DeserializeObject<JornadaPOCO>(App.restClient.CrearJornada(Preferences.Get("idGrupo", string.Empty), Jornada, Fecha.AddTicks(Hora.Ticks)).Result);
+            if (jornada == null)
+                App.Alert.ShowAlert("Quinieleros", $"Error de comunicación.");
+            else if (jornada.Code.Equals(CodeStatus.GENERIC_OK))
+            {
+                Session.SetJornadaActiva(jornada);
+            }
+            SaveCommand.ChangeCanExecute();
+            AddCommand.ChangeCanExecute();
         }
         private async void Add() 
         {
@@ -120,6 +132,19 @@ namespace Quinieleros.ViewModels
             Partidos.Add(partido);
             await partidoView.CloseAsync();
             SaveCommand.ChangeCanExecute();
+        }
+        private void ConsultarJornada() 
+        {
+            JornadaPOCO jornada = JsonConvert.DeserializeObject<JornadaPOCO>(App.restClient.JornadaActiva(Preferences.Get("idGrupo", string.Empty)).Result);
+            if (jornada == null)
+                App.Alert.ShowAlert("Quinieleros", $"Error de comunicación.");
+            else if (jornada.Code.Equals(CodeStatus.GENERIC_OK)) 
+            {
+                Session.SetJornadaActiva(jornada);
+                App.Alert.ShowAlert("Quinieleros", $"Para crear una nueva jornada se debe cerrar la jornada {jornada.Nombre}");
+            }
+            SaveCommand.ChangeCanExecute();
+            AddCommand.ChangeCanExecute();
         }
         #endregion
         public void ApplyQueryAttributes(IDictionary<string, object> query)

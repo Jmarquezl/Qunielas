@@ -9,5 +9,7 @@ namespace Quinieleros.Utils
     public interface IRestClient
     {
         Task<string> Logine(string user, string password);
+        Task<string> JornadaActiva(string grupo);
+        Task<string> CrearJornada(string grupo, string nombre, DateTime fechaCierre);
     }
 }

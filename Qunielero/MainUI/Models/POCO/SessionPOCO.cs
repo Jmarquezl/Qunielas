@@ -8,12 +8,10 @@ using System.Threading.Tasks;
 
 namespace Quinieleros.Models.POCO
 {
-    public class SessionPOCO
+    public class SessionPOCO : BasePOCO
     {
-        [JsonProperty("code")]
-        public string Code { get; set; }
-        [JsonProperty("message")]
-        public string Message { get; set; }
+        [JsonProperty("token")]
+        public string Token { get; set; }
         [JsonProperty("id")]
         public string Id { get; set; }
         [JsonProperty("grupo")]

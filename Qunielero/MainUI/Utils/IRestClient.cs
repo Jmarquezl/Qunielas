@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Quinieleros.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,6 +11,6 @@ namespace Quinieleros.Utils
     {
         Task<string> Logine(string user, string password);
         Task<string> JornadaActiva(string grupo);
-        Task<string> CrearJornada(string grupo, string nombre, DateTime fechaCierre);
+        Task<string> CrearJornada(string grupo, string nombre, DateTime fechaCierre, List<Partido> partidos);
     }
 }

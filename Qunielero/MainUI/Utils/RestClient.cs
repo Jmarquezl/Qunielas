@@ -3,6 +3,7 @@ using System.Diagnostics;
 using System.Net.Http.Headers;
 using System.Net.Http;
 using System.Text;
+using Quinieleros.Models;
 
 namespace Quinieleros.Utils
 {
@@ -52,7 +53,7 @@ namespace Quinieleros.Utils
             Uri uri = new Uri($"{domain}{configuration["jornadaActiva"]}?grupo={grupo}");
             try
             {
-                restClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", Preferences.Get("token", string.Empty));
+                restClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", Preferences.Get(Constants.TOKEN, string.Empty));
                 HttpResponseMessage response = restClient.GetAsync(uri).Result;
                 if (response.IsSuccessStatusCode)
                     return await response.Content.ReadAsStringAsync();
@@ -64,7 +65,7 @@ namespace Quinieleros.Utils
             return string.Empty;
         }
 
-        public async Task<string> CrearJornada(string grupo, string nombre, DateTime fechaCierre)
+        public async Task<string> CrearJornada(string grupo, string nombre, DateTime fechaCierre, List<Partido> partidos)
         {
             Uri uri = new Uri($"{domain}{configuration["crearJornada"]}");
             try
@@ -73,10 +74,15 @@ namespace Quinieleros.Utils
                 {
                     nombre = nombre,
                     grupo = grupo,
-                    fechaCierre = fechaCierre.ToString("yyyy-MM-dd hh:mm:ss")
+                    fechaCierre = fechaCierre.ToString("yyyy-MM-dd hh:mm:ss"),
+                    partidos = partidos.Select(p => new 
+                    {
+                        local = p.IdLocal,
+                        visita = p.IdVisita
+                    })
                 }.ToJson();
                 StringContent request = new StringContent(json, Encoding.UTF8, "application/json");
-                restClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", Preferences.Get("token", string.Empty));
+                restClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", Preferences.Get(Constants.TOKEN, string.Empty));
                 HttpResponseMessage response = restClient.PostAsync(uri, request).Result;
                 if (response.IsSuccessStatusCode)
                     return await response.Content.ReadAsStringAsync();

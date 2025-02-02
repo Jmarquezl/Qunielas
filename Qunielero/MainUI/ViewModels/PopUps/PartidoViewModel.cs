@@ -73,7 +73,7 @@ namespace Quinieleros.ViewModels.PopUps
         #region Methods
         public async void AddPartido() 
         {
-            OnResult.Invoke(new Partido() { EquipoLocal = selectedEquipoLocal.Nombre, EquipoVisita = selectedEquipoVisita.Nombre, EsBonus= false});
+            OnResult.Invoke(new Partido() { IdLocal = selectedEquipoLocal.Id, EquipoLocal = selectedEquipoLocal.Nombre, IdVisita = selectedEquipoVisita.Id, EquipoVisita = selectedEquipoVisita.Nombre, EsBonus= false});
         }
         #endregion
 

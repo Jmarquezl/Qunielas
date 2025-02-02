@@ -23,7 +23,7 @@ namespace Quinieleros
 
             string configScope = "Quinieleros.appsetting.release.json";
 #if DEBUG
-            configScope = "Quinieleros.appsettings.debug.json";
+            //configScope = "Quinieleros.appsettings.debug.json";
 		builder.Logging.AddDebug();
 #endif
             var assembly = Assembly.GetExecutingAssembly();

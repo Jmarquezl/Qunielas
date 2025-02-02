@@ -109,7 +109,7 @@ namespace Quinieleros.ViewModels
         }
         private async void Save()
         {
-            JornadaPOCO jornada = JsonConvert.DeserializeObject<JornadaPOCO>(App.restClient.CrearJornada(Preferences.Get("idGrupo", string.Empty), Jornada, Fecha.AddTicks(Hora.Ticks)).Result);
+            JornadaPOCO jornada = JsonConvert.DeserializeObject<JornadaPOCO>(App.restClient.CrearJornada(Preferences.Get("idGrupo", string.Empty), Jornada, Fecha.AddTicks(Hora.Ticks), Partidos.ToList()).Result);
             if (jornada == null)
                 App.Alert.ShowAlert("Quinieleros", $"Error de comunicación.");
             else if (jornada.Code.Equals(CodeStatus.GENERIC_OK))

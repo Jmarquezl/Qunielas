@@ -21,7 +21,7 @@
             <Label Text="Fecha Inicio" FontAttributes="Bold" VerticalOptions="Start"></Label>
             <HorizontalStackLayout>
                 <DatePicker Date="{Binding Fecha, Mode=TwoWay}" MinimumDate="{Binding FechaMinima}" Margin="10,0,0,0" Format="dd/MM/yyyy"/>
-                <TimePicker Time="{Binding Hora, Mode=TwoWay}"/>                
+                <TimePicker Time="{Binding Hora, Mode=TwoWay}" Format="HH:mm"/>                
             </HorizontalStackLayout>
         </FlexLayout>
 

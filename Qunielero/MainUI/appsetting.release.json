@@ -1,4 +1,6 @@
 {
-  "domain": "http://localhost:8080",
-  "login": "/public/authorization/login"
+  "domain": "https://middleware-chipilinsoft.koyeb.app",
+  "login": "/public/authorization/login",
+  "jornadaActiva": "/v1/jornada/activa",
+  "crearJornada": "/v1/jornada/crear"
 }
